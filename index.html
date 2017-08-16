@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Website title -->
+	<title>Laydown</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- CSS Files -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet" media="screen">
+	<link href="css/venobox.css" rel="stylesheet" media="screen">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<!-- Style -->
+	<link href="css/style.css" rel="stylesheet" media="screen">
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:600,700" rel="stylesheet">
+	<!-- Modernizr -->
+	<script src="js/modernizr.custom.js"></script>
+</head>
+
+<body>
+	<!-- preloader -->
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+	</div>
+	<!-- full screen background image -->
+	<div class="fullscreen">
+		<div class="overlay-dark">
+			<div class="container">
+				<div class="row">
+					<div class="main-column col-md-8 col-md-offset-2 text-center">
+						<!-- logo -->
+						<div class="logo animated fadeInDown"> <a href=""><img src="images/logo.png" alt="logo"></a></div>
+						<!-- main title -->
+						<h1 class="animated fadeInUp">
+								 Coming <i class="pe-7s-timer"></i> Soon
+								</h1>
+						<!-- countdown -->
+						<ul class="countdown">
+							<div class="col-xs-6 rowdays text-right animated fadeInUp">
+								<span class="days">00</span>
+							</div>
+							<div class="col-xs-6 numb text-center animated fadeInUp">
+								<div class="days_ref">days</div>
+								<div class="count">- and counting -</div>
+								<div class="numbcount text-center">
+									<li>
+										<div>
+											<span class="hours">00</span>
+										</div>
+									</li>
+									<li class="seperator">.</li>
+									<li>
+										<div>
+											<span class="minutes">00</span>
+										</div>
+									</li>
+									<li class="seperator">.</li>
+									<li>
+										<div>
+											<span class="seconds">00</span>
+										</div>
+									</li>
+								</div>
+							</div>
+						</ul>
+						<!-- main menu -->
+						<div class="menu animated fadeInUp">
+							<!-- Youtube Video URL -->
+							<a href="https://www.youtube.com/watch?v=Ryi0mt_yr3k" class="btn-play venobox" data-autoplay="true" data-vbtype="video"><i class="fa fa-play"></i></a>
+							<!-- about button -->
+							<a href="#" class="btn-about" data-dialog="about-modal">about</a>
+							<!-- contact button -->
+							<a href="#" class="btn-contact" data-dialog="contact-modal">contact</a>
+						</div>
+						<!-- notification link -->
+						<div class="notif animated fadeInUp text-center">
+							<a href="#" class="btn-notif" data-dialog="subscribe-modal">Get Notified</a>
+						</div>
+						<!-- dialog about -->
+						<div id="about-modal" class="dialog">
+							<div class="dialog__overlay"></div>
+							<div class="dialog__content">
+								<!-- left column -->
+								<div class="col-md-4 bg-about">
+									<div class="title">
+										<!-- logo -->
+										<div class="logo"> <a href=""><img src="images/logo.png" alt="logo"></a></div>
+										<!-- slogan -->
+										<h4>We help you start and grow your business.</h4>
+									</div>
+								</div>
+								<!-- right column -->
+								<div class="col-md-8 service">
+									<!-- about title -->
+									<h3>Corporate brand identity</h3>
+									<!-- about desription -->
+									<p class="lead">Effective branding can result in higher sales of not only one product, but of other products associated with that brand ~ Wikipedia. </p>
+									<div class="row">
+										<div class="col-sm-6 service-box">
+											<!-- service icon 1 -->
+											<i class="pe-7s-cash"></i>
+											<div class="service-text">
+												<!-- service 1 -->
+												<h5>Advertising</h5>
+												<p>At the core of every brand identity is a brand mark, or Logo</p>
+											</div>
+										</div>
+										<div class="col-sm-6 service-box">
+											<!-- service icon 2 -->
+											<i class="pe-7s-paint-bucket"></i>
+											<div class="service-text">
+												<!-- service 2 -->
+												<h5>Direct Marketing</h5>
+												<p>At the core of every brand identity is a brand mark, or Logo</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-6 service-box">
+											<!-- service icon 3 -->
+											<i class="pe-7s-id"></i>
+											<div class="service-text">
+												<!-- service 3 -->
+												<h5>Personal Selling</h5>
+												<p>At the core of every brand identity is a brand mark, or Logo</p>
+											</div>
+										</div>
+										<div class="col-sm-6 service-box">
+											<!-- service icon 4 -->
+											<i class="pe-7s-film"></i>
+											<div class="service-text">
+												<!-- service 4 -->
+												<h5>Public Relations</h5>
+												<p>At the core of every brand identity is a brand mark, or Logo</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<a href="#" class="close" data-dialog-close></a>
+							</div>
+						</div>
+						<!-- dialog contact -->
+						<div id="contact-modal" class="dialog">
+							<div class="dialog__overlay"></div>
+							<div class="dialog__content">
+								<div class="col-md-4 col-map">
+									<!-- google map -->
+									<div id="googlemaps"></div>
+								</div>
+								<div class="col-md-8 service">
+									<!-- your address -->
+									<p class="lead">1600 Amphitheatre Parkway</br>Mountain View, California 55000</br>Email: hello@lay.down</br>Phone: +1 (123) 456-789</p>
+									<!-- contact form -->
+									<form method="POST" id="contact-form" class="form-horizontal" action="contactengine.php" onSubmit="alert('Thank you for your message!');">
+										<div class="form-group">
+											<input type="text" name="Name" id="Name" class="form-control" placeholder="Name" required/>
+										</div>
+										<div class="form-group">
+											<input type="text" name="Email" id="Email" class="form-control" placeholder="Email" required/>
+										</div>
+										<div class="form-group">
+											<textarea name="Message" rows="20" cols="20" id="Message" class="form-control input-message" placeholder="Message" required></textarea>
+										</div>
+										<div class="form-group">
+											<input type="submit" name="submit" value="Submit" class="btn btn-success" />
+										</div>
+									</form>
+									<!-- social button -->
+									<ul class="social text-right">
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									</ul>
+								</div>
+								<a href="#" class="close" data-dialog-close></a>
+							</div>
+						</div>
+						<!-- dialog subscribe -->
+						<div id="subscribe-modal" class="dialog">
+							<div class="dialog__overlay"></div>
+							<div class="dialog__content">
+								<div class="col-sm-12 bg-subscribe">
+									<div class="title">
+										<!-- subscribe title -->
+										<h3 class="text-center">Be the first to know!</h3>
+										<!-- subscribe desription -->
+										<p class="lead text-center">Private label brands, also called own brands. This strategy is known as multi strategy</p>
+										<!-- subscribe form -->
+										<div class="subscribe-form fadeInUp">
+											<!-- Mailchimp URL -->
+											<form class="news-letter mailchimp" action="//moxdesign.us10.list-manage.com/subscribe/post" role="form" method="POST">
+												<!-- Mailchimp user ID -->
+												<input type="hidden" name="u" value="503bdae81fde8612ff4944435">
+												<!-- Mailchimp list ID -->
+												<input type="hidden" name="id" value="982a8e78f9">
+												<input class="form-control" type="email" name="MERGE0" placeholder="Your email..." required="">
+												<button type="submit" class="subscribe-btn btn">SUBSCRIBE</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<a href="#" class="close" data-dialog-close></a>
+							</div>
+						</div>
+						<!-- end content -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- javascript files -->
+	<script src="js/jquery.js"></script>
+	<script src="js/venobox.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/jquery.downCount.js"></script>
+	<script src="js/dialogFx.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmOtm9NPxN9APxv06phUu48TO8mpuOKi8&callback=initMap"></script>
+	<script src="js/gmap.js"></script>
+	<script src="js/jquery.backstretch.js"></script>
+</body>
+
+</html>

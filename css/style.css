@@ -1,0 +1,1389 @@
+/**
+Laydown
+Coming Soon Template
+Author: MoxDesign - https://themeforest.net/user/moxdesign
+
+[Table of contents]
+
+1. Body
+2. Loader / #loader
+3. Background / .fullscreen
+4. Logo / .logo
+5. Countdown / .countdown
+6. Menu / .menu
+7. Dialog / .dialog
+8. Service / .service
+9. Google Maps / #googlemaps
+10. Contact / #contact-form
+11. Social button / .social
+12. Subscribe form / .subscribe-form
+13. Responsive
+**/
+
+/*------------------------------------------------------------------
+[Color codes]
+
+Background:		#ffffff (white)
+Content:		#666666 (light black)
+Title:			#252525 (black)
+Icon & Link:	#2ecc71 (green)
+Hover:			#00b16a (dark green)
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body copy:			14px Open Sans, Helvetica, Arial, sans-serif;
+Headers:			55px Montserrat, sans-serif;
+Input, textarea:	14px Open Sans, Helvetica, Arial, sans-serif;
+Social button:		25px Font Awesome;
+Service icon:		35px Stroke 7 Icon;
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[1. Body]
+*/
+
+html, body {
+	width: 100%;
+	overflow-x: hidden;
+}
+body {
+	height:100%;
+	font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif; 
+	font-weight: 400;
+	padding: 0;
+	margin:0;
+	font-size: 14px;
+	line-height: 26px;
+	color:#666666; 
+	background: #fff;
+	overflow-x:hidden;
+	position: relative;
+}
+h1 {
+	font-size: 44px;
+	line-height: 18.5px;
+}
+h2 {
+	font-size: 33px;
+	line-height: 19px;
+}
+h3 {
+	font-size: 25px;
+	line-height: 36px;
+}
+h4 {
+	font-size: 19px;
+	line-height: 32px;
+}
+h5 {
+	font-size: 14px;
+	line-height: 26px;
+}
+h6 {
+	font-size: 12px;
+	line-height: 30px;
+}
+.lead {
+	font-size: 19px;
+	line-height: 32px;
+	margin-bottom: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #252525;
+}	
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	text-decoration: none
+}	 
+p { 
+	padding: 0 0 1em;
+	margin:0;
+}
+a {
+	color: #2ecc71;
+	outline: 0;
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
+} 
+a:hover {
+	text-decoration: none;
+	color: #1f2222;
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
+}
+.highlight {
+	color: #2ecc71;
+}
+.btn-default {
+	font-size: 13px;
+	font-weight: 600;
+	margin: 30px 0 10px;
+	margin-right: 10px;
+	line-height: 20px;
+	padding: 10px 35px;
+	height: 40px;
+	border: none;
+	background: #2ecc71;
+	transition: all 0.4s;
+	color: white;
+	border-radius: 6px;
+	text-transform: uppercase;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active {
+	background: #00b16a;
+	color: white;
+}
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+	overflow: visible;
+	background: #333;
+}
+
+/*------------------------------------------------------------------
+[2. Loader / #loader]
+*/
+
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: #2ecc71;
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+} 
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: #ffffff;
+    -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+} 
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: #019875;
+    -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+} 
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+.overlay {
+    background-color: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.overlay-dark {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/*------------------------------------------------------------------
+[3. Background / .fullscreen]
+*/
+
+.fullscreen {
+	background: center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	top:0;
+	left:0;
+	width:100%;
+	height:100vh !important;
+	overflow:hidden;
+}
+
+/*------------------------------------------------------------------
+[4. Logo / .logo]
+*/
+
+.logo {
+	margin: 90px 0 70px 0;
+}
+.logo img {
+	width: 135px; 
+	height: 43px
+}
+.main-column h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 700;
+	color: #ffffff;
+	margin: 50px 0 50px;
+	text-transform: uppercase;
+}
+
+/*------------------------------------------------------------------
+[5. Countdown / .countdown]
+*/
+
+.rowdays {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-size: 125px;
+	line-height: 85px;
+    font-weight: 600;
+	padding-right: 0;
+	animation-delay: 0.3s;
+}
+.days_ref {
+	margin: -4px auto;
+	font-size: 25px;
+    font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 15px;
+}
+.countdown {
+	margin-bottom: 10px;
+	color: white;
+}
+.count {
+	font-size: 15px;
+	margin: 8px 0 5px;
+	border-top: solid white 1px;
+	border-bottom: solid white 1px;
+	line-height: 31px;
+	width: 111px;
+}
+.numb {
+	padding-left: 10px;
+	width: 111px;
+	animation-delay: 0.3s;
+}
+ul.countdown {
+    list-style: none;
+    margin: 50px auto 170px;
+    padding: 0;
+    display: block;
+}
+.numbcount {
+	width: 111px;
+}
+ul.countdown li {
+    display: inline-block;
+}
+
+ul.countdown li span {
+	margin: 0 auto;
+    font-size: 24px;
+    font-weight: 100;
+}
+ul.countdown li.seperator {
+    font-size: 20px;
+    line-height: 20px;
+}
+ul.countdown li p {
+    padding-top: 17px;
+}
+
+/*------------------------------------------------------------------
+[6. Menu / .menu]
+*/
+
+.menu {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	margin: 32px auto 30px;
+}
+.menu i {
+	position: absolute;
+	margin: 29px auto 0 -4px;
+	color: #ffffff;
+	font-size: 17px;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.btn-play {
+	width: 76px;
+	height: 76px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	vertical-align: middle;
+	display: inline-block;
+	background: #2ecc71;
+	margin-left: -38px;
+	color: #ffffff;
+	position: absolute;
+	left: 50%;
+	top: -10px;
+}
+.btn-about {
+	display: inline-block;
+	background-color: transparent;
+	padding: 15px 65px 15px 55px;
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	height: 55px;
+	max-width: 170px;
+	border: solid 1px white;
+	color: #ffffff;
+	margin-left: 9px;
+	margin-right: -5px;
+}
+.btn-contact {
+	display: inline-block;
+	background-color: transparent;
+	padding: 15px 54px 15px 64px;
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	height: 55px;
+	max-width: 170px;
+	border: solid 1px white;
+	color: #ffffff;
+}
+.btn-about:hover,
+.btn-contact:hover {
+	color: #bdc3c7;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.btn-play:hover {
+	background-color: #00b16a;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.notif {
+	margin-bottom: 100px;
+	animation-delay: 1s;
+}
+.btn-notif {
+	font-size: 13px;
+	line-height: 26px;
+	font-weight: 600;
+	left: 50%;
+	background-color: transparent;
+	text-transform: uppercase;
+	height: 55px;
+	color: #ffffff;
+}
+.btn-notif:hover {
+	color: #ffffff;
+}
+.btn-notif:before {
+	font-family: 'Pe-icon-7-stroke';
+	font-size: 30px;
+	content: "\e677";
+	position: absolute;
+	padding-top: 0px;
+	left: 50%;
+	margin-left: -12px;
+	transition: all 350ms ease;
+	opacity: 0;	
+}
+.btn-notif:hover:before {
+	padding-top: 28px;
+	opacity: 1;	
+}
+
+/*------------------------------------------------------------------
+[7. Dialog / .dialog]
+*/
+
+.dialog,
+.dialog__overlay {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.dialog {
+	position: fixed;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	pointer-events: none;
+}
+.dialog__overlay {
+	position: absolute;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.4); 
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	-webkit-backface-visibility: hidden;
+}
+.dialog--open .dialog__overlay {
+	opacity: 1;
+	pointer-events: auto;
+}
+.dialog__content {
+	width: 60%;
+	max-width: 860px;
+	min-width: 290px;
+	background: white; 
+	padding: 0;
+	text-align: left;
+	position: relative;
+	z-index: 5;
+	opacity: 0;
+    overflow-y: auto;
+	height: 600px;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 5px 5px rgba(0,0,0,0.23);
+}
+.dialog--open .dialog__content {
+	pointer-events: auto;
+}
+.dialog h2 {
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 300;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+.dialog.dialog--open .dialog__content,
+.dialog.dialog--close .dialog__content {
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+.dialog.dialog--open .dialog__content {
+	-webkit-animation-name: anim-open;
+	animation-name: anim-open;
+}
+.dialog.dialog--close .dialog__content {
+	-webkit-animation-name: anim-close;
+	animation-name: anim-close;
+}
+.close {
+	position: absolute;
+	right: 25px;
+	top: 25px;
+	width: 25px;
+	height: 25px;
+	opacity: 0.3;
+}
+.close:hover {
+	opacity: 1;
+}
+.close:before, .close:after {
+	position: absolute;
+	left: 15px;
+	content: ' ';
+	height: 25px;
+	width: 2px;
+	background-color: #333;
+}
+.close:before {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+.close:after {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);	
+}
+@-webkit-keyframes anim-open {
+	0% { opacity: 0; -webkit-transform: scale3d(1.1, 1.1, 1); }
+	100% { opacity: 1; -webkit-transform: scale3d(1, 1, 1); }
+}
+@keyframes anim-open {
+	0% { opacity: 0; -webkit-transform: scale3d(1.1, 1.1, 1); transform: scale3d(1.1, 1.1, 1); }
+	100% { opacity: 1; -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1); }
+}
+@-webkit-keyframes anim-close {
+	0% { opacity: 1; }
+	100% { opacity: 0; -webkit-transform: scale3d(0.9, 0.9, 1); }
+}
+@keyframes anim-close {
+	0% { opacity: 1; }
+	100% { opacity: 0; -webkit-transform: scale3d(0.9, 0.9, 1); transform: scale3d(0.9, 0.9, 1); }
+}
+.bg-about {
+	background: 
+	linear-gradient(
+	  rgba(0, 0, 0, 0.3),
+	  rgba(0, 0, 0, 0.3)
+	),
+	url(../images/bg2.jpg);
+	background-size: cover;
+	height: 100%;	
+}
+.bg-about .title {
+	margin-top: 60px;
+	padding: 30px;
+}
+.bg-about .title h4{
+	color: white;
+	font-weight: 300;
+}
+
+/*------------------------------------------------------------------
+[8. Service / .service]
+*/
+
+.service {
+	padding: 30px;
+}
+.service i {
+	font-size: 35px;
+	float: left;
+	color: #2ecc71;
+	height: 100%;
+}
+.service-box {
+	margin-bottom: 20px;
+}
+.service-text {
+	float: left;
+}
+.service-text h5 {
+	font-weight: 600;
+}
+
+/*------------------------------------------------------------------
+[9. Google Maps / #googlemaps]
+*/
+
+#googlemaps {
+	height: 600px; 
+}
+.col-map {
+	padding: 0px;
+}
+
+/*------------------------------------------------------------------
+[10. Contact / #contact-form]
+*/
+
+#contact-form {
+	padding: 15px;
+	margin: 0 auto;
+}
+#contact-form input {
+	font-size: 14px;
+	position: relative;
+	padding: 5px 20px;
+	width: 100%;
+}
+#contact-form textarea {
+	font-size: 14px;
+	position: relative;
+	padding: 10px 20px;
+	width: 100%;
+	height: 100px !important;
+}
+#contact-form .form-control {
+	border-radius: 0;
+	border: solid 1px #dadada;
+	background-color: #fff;
+	color: #252525;
+	font-size:14px;
+	height: 55px;
+}
+#contact-form .btn {
+	height: 40px;
+	width: 150px;
+	background-color: #2ecc71;
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 10px 35px;
+	border-radius: 6px;
+	border: none;
+	text-transform: uppercase;
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
+}
+#contact-form .btn:hover {
+	background-color: #00b16a;
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
+}
+
+/*------------------------------------------------------------------
+[11. Social Button / .social]
+*/
+
+.social {
+	padding: 0;
+}
+.social ul {
+	list-style: none;
+}
+.social li {
+	display: inline-block;
+	margin-right: 20px;
+}
+.social li i {
+	font-size: 25px;
+	color: #2ecc71;
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
+}
+.social li i:hover {
+	color: #00b16a;
+}
+#subscribe-modal .dialog__content {
+	width: 60%;
+	max-width: 500px;
+	min-width: 290px;
+	background: white; 
+	padding: 0;
+	text-align: left;
+	position: relative;
+	z-index: 5;
+	opacity: 0;
+    overflow-y: auto;
+	height: 500px;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 5px 5px rgba(0,0,0,0.23);
+}
+.bg-subscribe {
+	background: 
+	linear-gradient(
+	  rgba(0, 0, 0, 0.5),
+	  rgba(0, 0, 0, 0.5)
+	),
+	url(../images/bg3.jpg);
+	background-size: cover;
+	height: 100%;	
+}
+.bg-subscribe .title {
+	margin: 130px 0;
+	display: block;
+}
+.bg-subscribe p, .bg-subscribe h3 {
+	color: #ffffff;
+}
+
+/*------------------------------------------------------------------
+[12. Subscribe form / .subscribe-form]
+*/
+
+.subscribe-form {
+	max-width: 400px;
+	margin: 30px auto 40px;
+	text-align: left;
+	overflow: hidden;
+}
+.subscribe-form form {
+	position: relative;
+}
+.subscribe-form input {
+	max-width: 85%;
+	position: relative;
+	padding: 5px 25px;
+}
+.subscribe-form .form-control {
+	border-radius: 6px 0 0 6px;
+	border: none;
+	background-color: white;
+	color: #252525;
+	font-size: 14px;
+	height: 55px;
+}
+.subscribe-form button {
+	border-radius: 0 6px 6px 0;
+	background-color: #2ecc71;
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: 600;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 0 30px;
+	margin: 0;
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
+}
+.subscribe-form .btn {
+	height: 55px;
+}
+.subscribe-form .btn:hover {
+	background-color: #00b16a;
+	color: #fff;
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
+}
+.subscribe-form .form-control::-webkit-input-placeholder {
+	color: #252525;
+}
+.subscribe-form .form-control:-moz-placeholder { 
+	color: #252525;  
+}
+.subscribe-form .form-control::-moz-placeholder { 
+	color: #252525;  
+}
+.subscribe-form .form-control:-ms-input-placeholder {  
+	color: #252525;  
+}
+#subscribe-modal .close:before, #subscribe-modal .close:after {
+	background-color: #ffffff;
+}
+#subscribe-modal .close {
+	opacity: 1;
+}
+#subscribe-modal .close:hover {
+	opacity: 0.5;
+}
+.control-group .controls {
+	overflow-x: hidden;
+}
+
+/*------------------------------------------------------------------
+[13. Responsive]
+*/
+
+/* iPad Portrait */
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (orientation: portrait) {
+.logo {
+	margin: 200px 0 90px 0;
+}
+ul.countdown {
+    margin: 80px auto;
+}
+.menu {
+	margin: 75px auto 30px;
+}
+.bg-about {
+	height: 180px;
+}
+.bg-about .title {
+	margin-top: 0;
+}
+.bg-about .logo {
+	margin: 20px 0 20px;
+}
+#about-modal .dialog__content, #contact-modal .dialog__content {
+	height: 800px;
+}
+#about-modal .close:before, #about-modal .close:after {
+	background-color: #ffffff;
+}
+#about-modal .close {
+	opacity: 1;
+}
+#about-modal .close:hover {
+	opacity: 0.5;
+}
+#googlemaps {
+	height: 300px; 
+}
+#subscribe-modal .dialog__content {
+	height: 600px;
+}
+.bg-subscribe .title {
+	margin: 160px 0;
+}
+}
+
+/* iPad Landscape */
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (orientation: landscape) {
+.logo {
+	margin: 100px 0 50px 0;
+}
+#about-modal .dialog__content, #contact-modal .dialog__content {
+	width: 80%;
+}
+.bg-about .logo {
+	margin: 70px 0 50px 0;
+}
+}
+
+/* iPhone 6+ Landscape */
+@media only screen and (max-width: 736px) { 
+.logo {
+	margin: 30px 0 25px 0;
+}
+.main-column h1{
+	font-size: 40px;
+	line-height: 40px;
+	margin: 10px 0 10px;
+}
+ul.countdown {
+    margin: 30px auto;
+}
+.rowdays {
+	font-size: 95px;
+	line-height: 70px;
+}
+.days_ref {
+	margin: -4px auto;
+	font-size: 20px;
+	letter-spacing: 12px;
+}
+.numbcount {
+	width: 88px;
+}
+.count {
+	font-size: 12px;
+	margin: 5px 0 3px;
+	line-height: 19px;
+	width: 88px;
+}
+ul.countdown li span {
+    font-size: 17px;
+}
+.menu {
+	margin: 25px auto 20px;
+}
+.btn-about {
+	padding: 12px 60px 12px 50px;
+}
+.btn-contact {
+	padding: 12px 49px 12px 59px;
+}
+#about-modal .dialog__content, #contact-modal .dialog__content {
+	height: 350px;
+	width: 75%;
+}
+#about-modal .close:before, #about-modal .close:after {
+	background-color: #ffffff;
+}
+#about-modal .close {
+	opacity: 1;
+}
+#about-modal .close:hover {
+	opacity: 0.5;
+}
+.bg-about {
+	height: 160px;
+}
+.bg-about .title {
+	margin-top: 0;
+}
+.bg-about .logo {
+	margin: 15px 0 10px;
+}
+.service i {
+	width: 12%;
+}
+#googlemaps {
+	height: 230px; 
+}
+#subscribe-modal .dialog__content {
+	height: 350px;
+	overflow-y: hidden;
+}
+.bg-subscribe .title {
+	margin-top: 0;
+	padding-top: 40px;
+}
+.bg-subscribe p {
+	font-size: 17px;
+	line-height: 26px;
+}
+.bg-subscribe h3 {
+	font-size: 21px;
+}
+.subscribe-form {
+	max-width: 350px;
+}
+.subscribe-form input {
+	max-width: 63%;
+	padding: 5px 15px;
+}
+}
+
+/* iPhone 6 Landscape */
+@media screen and (max-device-width: 667px) and (orientation: landscape) { 
+.logo {
+	margin: 20px 0 15px 0;
+}
+ul.countdown {
+    margin: 20px auto;
+}
+.menu {
+	margin: 20px auto 20px;
+}
+.btn-play {
+	top: -12px;
+}
+.btn-about {
+	height: 50px;
+	padding: 10px 60px 10px 45px;
+}
+.btn-contact {
+	height: 50px;
+	padding: 10px 44px 10px 59px;
+}
+#about-modal .dialog__content, #contact-modal .dialog__content {
+	height: 300px;
+	width: 75%;
+}
+#subscribe-modal .dialog__content {
+	height: 300px;
+}
+.bg-subscribe .title {
+	padding-top: 25px;
+}
+.subscribe-form {
+	margin: 10px auto;
+}
+}
+
+/* iPhone 5 Landscape */
+@media (max-width: 568px) {
+.logo {
+	margin: 12px 0 10px 0;
+}
+.main-column h1{
+	font-size: 35px;
+	line-height: 35px;
+	margin: 10px 0 10px;
+}
+ul.countdown {
+    margin: 15px auto;
+}
+.menu {
+	margin: 20px auto 13px;
+}
+.btn-play {
+	width: 70px;
+	height: 70px;
+	margin-left: -35px;
+	top: -12px;
+}
+.btn-about {
+	padding: 10px 45px 10px 35px;
+	height: 50px;
+}
+.btn-contact {
+	padding: 10px 34px 10px 44px;
+	height: 50px;
+}
+.btn-notif:before {
+	font-size: 20px;
+}
+.btn-notif:hover:before {
+	padding-top: 20px;
+}
+#about-modal .dialog__content, #contact-modal .dialog__content {
+	height: 270px;
+	width: 70%;
+}
+#about-modal .close:before, #about-modal .close:after {
+	background-color: #ffffff;
+}
+#about-modal .close {
+	opacity: 1;
+}
+#about-modal .close:hover {
+	opacity: 0.5;
+}
+.bg-about {
+	height: 190px;
+}
+.bg-about .title {
+	margin-top: 0;
+}
+.bg-about .logo {
+	margin: 15px 0 10px;
+}
+#googlemaps {
+	height: 200px; 
+}
+#subscribe-modal .dialog__content {
+	height: 270px;
+}
+.bg-subscribe .title {
+	padding: 16px;
+}
+.bg-subscribe h3 {
+	font-size: 19px;
+}
+.bg-subscribe p {
+	font-size: 15px;
+	line-height: 23px;
+}
+.subscribe-form button {
+	padding: 0 20px;
+}
+.subscribe-form input {
+	max-width: 61%;
+	padding: 5px 15px;
+}
+}
+
+/* iPhone 4 Landscape */
+@media (max-width: 480px) {
+.bg-about h3 {
+	font-size: 19px;
+}
+.bg-subscribe .title {
+	padding: 10px;
+}
+.subscribe-form .form-control {
+	font-size: 12px;
+}
+.subscribe-form button {
+	padding: 0 15px;
+}
+}
+
+/* iPhone 6+ portrait */
+@media screen and (max-device-width: 414px) and (orientation: portrait) {
+.logo {
+	margin: 100px 0 50px 0;
+}
+.main-column h1{
+	font-size: 40px;
+	line-height: 40px;
+	margin: 15px 0 10px;
+}
+ul.countdown {
+    margin: 50px auto;
+}
+.menu {
+	margin: 45px auto 40px;
+}
+.btn-notif:before {
+	font-size: 20px;
+}
+.btn-notif:hover:before {
+	padding-top: 20px;
+}
+#about-modal .dialog__content, #contact-modal .dialog__content {
+	height: 520px;
+	width: 70%;
+}
+#about-modal .close:before, #about-modal .close:after {
+	background-color: #ffffff;
+}
+#about-modal .close {
+	opacity: 1;
+}
+#about-modal .close:hover {
+	opacity: 0.5;
+}
+.bg-about {
+	height: 190px;
+}
+.bg-about .title {
+	margin-top: 0;
+}
+.bg-about .logo {
+	margin: 15px 0 10px;
+}
+#googlemaps {
+	height: 250px; 
+}
+#subscribe-modal .dialog__content {
+	height: 420px;
+	width: 75%;
+}
+.bg-subscribe .title {
+	margin-top: 0;
+	padding-top: 60px;
+}
+.bg-subscribe p {
+	font-size: 17px;
+	line-height: 26px;
+}
+.bg-subscribe h3 {
+	font-size: 21px;
+}
+.subscribe-form button {
+	padding: 0 20px;
+}
+.subscribe-form input {
+	max-width: 61%;
+	padding: 5px 15px;
+}
+.subscribe-form {
+	max-width: 270px;
+}	
+}
+
+/* iPhone 6 portrait */
+@media screen and (max-device-width: 375px) and (orientation: portrait) {
+.logo {
+	margin: 75px 0 50px 0;
+}
+.main-column h1{
+	font-size: 38px;
+	line-height: 40px;
+}
+ul.countdown {
+    margin: 50px auto;
+}
+.rowdays {
+	font-size: 95px;
+	line-height: 70px;
+}
+.days_ref {
+	margin: -4px auto;
+	font-size: 20px;
+	letter-spacing: 12px;
+}
+.numbcount {
+	width: 88px;
+}
+.count {
+	font-size: 12px;
+	margin: 5px 0 3px;
+	line-height: 19px;
+	width: 88px;
+}
+ul.countdown li span {
+    font-size: 17px;
+}
+.menu {
+	margin: 45px auto 20px;
+}
+.btn-about {
+	padding: 12px 60px 12px 50px;
+}
+.btn-contact {
+	padding: 12px 49px 12px 59px;
+}
+.btn-notif:before {
+	font-size: 20px;
+}
+.btn-notif:hover:before {
+	padding-top: 20px;
+}
+#about-modal .dialog__content, #contact-modal .dialog__content {
+	height: 460px;
+	width: 70%;
+}
+#about-modal .close:before, #about-modal .close:after {
+	background-color: #ffffff;
+}
+#about-modal .close {
+	opacity: 1;
+}
+#about-modal .close:hover {
+	opacity: 0.5;
+}
+.bg-about {
+	height: 190px;
+}
+.bg-about .title {
+	margin-top: 0;
+}
+.bg-about .logo {
+	margin: 15px 0 10px;
+}
+#googlemaps {
+	height: 250px; 
+}
+#subscribe-modal .dialog__content {
+	height: 420px;
+	width: 75%;
+	overflow-y: hidden;
+}
+.bg-subscribe .title {
+	margin-top: 0;
+	padding-top: 60px;
+}
+.bg-subscribe p {
+	font-size: 17px;
+	line-height: 26px;
+}
+.bg-subscribe h3 {
+	font-size: 21px;
+}
+.subscribe-form button {
+	padding: 0 15px;
+}
+.subscribe-form input {
+	max-width: 60%;
+	padding: 5px 15px;
+}
+.subscribe-form {
+	max-width: 250px;
+}	
+}
+
+/* smartphone portrait */
+@media screen and (max-device-width: 360px) and (orientation: portrait) {
+.logo {
+	margin: 85px 0 30px 0;
+}
+.main-column h1{
+	margin: 40px 0 40px;
+	font-size: 32px;
+	line-height: 35px;
+}
+ul.countdown {
+    margin: 45px auto;
+}
+.menu {
+	margin: 40px auto 20px;
+}
+.btn-play {
+	width: 70px;
+	height: 70px;
+	margin-left: -35px;
+	top: -12px;
+}
+.btn-about {
+	padding: 12px 45px 10px 35px;
+	height: 50px;
+}
+.btn-contact {
+	padding: 12px 34px 10px 44px;
+	height: 50px;
+}
+#about-modal .dialog__content, #contact-modal .dialog__content {
+	height: 490px;
+	width: 70%;
+}
+.bg-about {
+	height: 190px;
+}
+.bg-about .title {
+	margin-top: 0;
+}
+.bg-about .logo {
+	margin: 15px 0 10px;
+}
+#googlemaps {
+	height: 250px; 
+}
+#subscribe-modal .dialog__content {
+	height: 390px;
+	width: 75%;
+	overflow-y: hidden;
+}
+.bg-subscribe .title {
+	margin-top: 0;
+	padding-top: 60px;
+}
+.bg-subscribe p {
+	font-size: 17px;
+	line-height: 26px;
+}
+.bg-subscribe h3 {
+	font-size: 21px;
+}
+.subscribe-form button {
+	padding: 0 15px;
+}
+.subscribe-form input {
+	max-width: 60%;
+	padding: 5px 15px;
+}
+.subscribe-form {
+	max-width: 250px;
+}	
+}
+
+/* large screen ----------- */
+@media (min-width: 1360px) {
+.bg-about .logo {
+	margin: 70px 0 50px 0;
+}
+}
+
+/* large screen ----------- */
+@media (min-width: 1440px) {
+.logo {
+	margin: 130px 0 100px 0;
+}
+ul.countdown {
+    margin: 80px auto;
+}
+.menu {
+	margin: 75px auto 30px;
+}
+}
+
+/* large screen ----------- */
+@media (min-width: 1680px) {
+.logo {
+	margin: 170px 0 110px 0;
+}
+ul.countdown {
+    margin: 120px auto;
+}
+.main-column h1{
+	font-size: 65px;
+	line-height: 65px;
+}
+}
+
+/* large screen ----------- */
+@media (min-width: 1920px) {
+.logo {
+	margin: 150px 0 100px 0;
+}
+.logo img {
+	width: 203px; 
+	height: 65px
+}
+ul.countdown {
+    margin: 80px auto;
+}
+.menu {
+	margin: 90px auto 50px;
+}
+.bg-about .logo img {
+	width: 135px; 
+	height: 43px
+}
+}
