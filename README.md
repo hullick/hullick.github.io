@@ -1,1 +1,0 @@
-# hullick.github.io
