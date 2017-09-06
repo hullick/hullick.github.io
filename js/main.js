@@ -1,18 +1,36 @@
 /*
-* Template Name: Unique - Responsive vCard Template
-* Author: lmpixels
-* Author URL: http://themeforest.net/user/lmpixels
-* Version: 1.0
-*/
+ * Template Name: Unique - Responsive vCard Template
+ * Author: lmpixels
+ * Author URL: http://themeforest.net/user/lmpixels
+ * Version: 1.0
+ */
+
+// Carregando o json de linguagem
+var jsonLanguageLoader = $.getJSON('language/lang.json');
+var jsonLanguageLoaded = null;
+
+function trocarTextosDosElementosParaLinguagem(linguagem) {
+    if (jsonLanguageLoaded) {
+        var back_end_developer = jsonLanguageLoaded.terms[linguagem].blocks.text_carousel.back_end_developer;
+        var database_developer = jsonLanguageLoaded.terms[linguagem].blocks.text_carousel.database_developer;
+        var linux_based_so_fan = jsonLanguageLoaded.terms[linguagem].blocks.text_carousel.linux_based_so_fan;
+    } else {
+        informarErroDeCarregamentoDeJsonDeLinguagem()
+    }
+}
+
+function informarErroDeCarregamentoDeJsonDeLinguagem() {
+    console.log("O arquivo de configuração de linguagem não pôde ser carregado.\nFalha de configuração geral.\nFavor entrar em contato com hullick02@gmail.com");
+}
 
 (function($) {
-"use strict";
-    
+    "use strict";
+
     // Portfolio subpage filters
     function portfolio_init() {
         var portfolio_grid = $('#portfolio_grid'),
             portfolio_filter = $('#portfolio_filters');
-            
+
         if (portfolio_grid) {
 
             portfolio_grid.shuffle({
@@ -20,17 +38,17 @@
                 itemSelector: 'figure'
             });
 
-            $('.site-main-menu').on("click", "a", function (e) {
+            $('.site-main-menu').on("click", "a", function(e) {
                 portfolio_grid.shuffle('update');
             });
 
 
-            portfolio_filter.on("click", ".filter", function (e) {
+            portfolio_filter.on("click", ".filter", function(e) {
                 portfolio_grid.shuffle('update');
                 e.preventDefault();
                 $('#portfolio_filters .filter').parent().removeClass('active');
                 $(this).parent().addClass('active');
-                portfolio_grid.shuffle('shuffle', $(this).attr('data-group') );
+                portfolio_grid.shuffle('shuffle', $(this).attr('data-group'));
             });
 
         }
@@ -38,11 +56,11 @@
     // /Portfolio subpage filters
 
     // Contact form validator
-    $(function () {
+    $(function() {
 
         $('#contact-form').validator();
 
-        $('#contact-form').on('submit', function (e) {
+        $('#contact-form').on('submit', function(e) {
             if (!e.isDefaultPrevented()) {
                 var url = "contact_form/contact_form.php";
 
@@ -50,8 +68,7 @@
                     type: "POST",
                     url: url,
                     data: $(this).serialize(),
-                    success: function (data)
-                    {
+                    success: function(data) {
                         var messageAlert = 'alert-' + data.type;
                         var messageText = data.message;
 
@@ -76,7 +93,7 @@
         }
     }
     // /Hide Mobile menu
-    
+
     // Custom scroll
     function customScroll() {
         var windowWidth = $(window).width();
@@ -101,22 +118,35 @@
     //On Window load & Resize
     $(window)
         .on('load', function() { //Load
-            // Animation on Page Loading
-            $(".preloader").fadeOut("slow");
 
-            // initializing page transition.
-            var ptPage = $('.subpages');
-            if (ptPage[0]) {
-                PageTransitions.init({
-                    menu: 'ul.site-main-menu',
-                });
-            }
+            // Quando o arquivo de linguagens for carregado, haverá o fadeout do preloader            
+            jsonLanguageLoader.done((json) => {
+                jsonLanguageLoaded = json;
 
-            customScroll();
+                trocarTextosDosElementosParaLinguagem(jsonLanguageLoaded.config.default_language);
+
+                // Animation on Page Loading
+                $(".preloader").fadeOut("slow");
+
+                // initializing page transition.
+                var ptPage = $('.subpages');
+                if (ptPage[0]) {
+                    PageTransitions.init({
+                        menu: 'ul.site-main-menu',
+                    });
+                }
+
+                customScroll();
+            })
+
+            jsonLanguageLoader.fail(() => {
+                informarErroDeCarregamentoDeJsonDeLinguagem();
+            })
+
         })
         .on('resize', function() { //Resize
             mobileMenuHide();
-             
+
             customScroll();
         });
 
@@ -129,22 +159,22 @@
         // Initialize Portfolio grid
         var $portfolio_container = $("#portfolio-grid");
 
-        $portfolio_container.imagesLoaded(function () {
-            setTimeout(function(){
+        $portfolio_container.imagesLoaded(function() {
+            setTimeout(function() {
                 portfolio_init(this);
             }, 500);
         });
 
         // Portfolio hover effect init
-        $(' #portfolio_grid > figure > a ').each( function() { $(this).hoverdir(); } );
+        $(' #portfolio_grid > figure > a ').each(function() { $(this).hoverdir(); });
 
         // Mobile menu
-        $('.menu-toggle').on("click", function () {
+        $('.menu-toggle').on("click", function() {
             $('#site_header').toggleClass('mobile-menu-hide');
         });
 
         // Mobile menu hide on main menu item click
-        $('.site-main-menu').on("click", "a", function (e) {
+        $('.site-main-menu').on("click", "a", function(e) {
             mobileMenuHide();
         });
 
@@ -155,20 +185,20 @@
             loop: false, // Infinity loop. Duplicate last and first items to get loop illusion.
             navText: false,
             margin: 10,
-            responsive : {
+            responsive: {
                 // breakpoint from 0 up
-                0 : {
+                0: {
                     items: 1,
                 },
                 // breakpoint from 480 up
-                480 : {
+                480: {
                     items: 1,
                 },
                 // breakpoint from 768 up
-                768 : {
+                768: {
                     items: 2,
                 },
-                1200 : {
+                1200: {
                     items: 3,
                 }
             }
@@ -205,31 +235,31 @@
             },
 
             iframe: {
-                markup: '<div class="mfp-iframe-scaler">'+
-                        '<div class="mfp-close"></div>'+
-                        '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-                        '<div class="mfp-title mfp-bottom-iframe-title"></div>'+
-                      '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+                markup: '<div class="mfp-iframe-scaler">' +
+                    '<div class="mfp-close"></div>' +
+                    '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+                    '<div class="mfp-title mfp-bottom-iframe-title"></div>' +
+                    '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
 
                 patterns: {
                     youtube: {
-                      index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+                        index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
 
-                      id: 'v=', // String that splits URL in a two parts, second part should be %id%
-                      // Or null - full URL will be returned
-                      // Or a function that should return %id%, for example:
-                      // id: function(url) { return 'parsed id'; }
+                        id: 'v=', // String that splits URL in a two parts, second part should be %id%
+                        // Or null - full URL will be returned
+                        // Or a function that should return %id%, for example:
+                        // id: function(url) { return 'parsed id'; }
 
-                      src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
+                        src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
                     },
                     vimeo: {
-                      index: 'vimeo.com/',
-                      id: '/',
-                      src: '//player.vimeo.com/video/%id%?autoplay=1'
+                        index: 'vimeo.com/',
+                        id: '/',
+                        src: '//player.vimeo.com/video/%id%?autoplay=1'
                     },
                     gmaps: {
-                      index: '//maps.google.',
-                      src: '%id%&output=embed'
+                        index: '//maps.google.',
+                        src: '%id%&output=embed'
                     }
                 },
 
@@ -238,7 +268,7 @@
 
             callbacks: {
                 markupParse: function(template, values, item) {
-                 values.title = item.el.attr('title');
+                    values.title = item.el.attr('title');
                 }
             },
         });

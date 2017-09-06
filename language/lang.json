@@ -1,11 +1,24 @@
 {
 	"terms":
 	{
-
+		"portuguese":
+		{
+			"blocks":
+			{
+				"text_carousel":
+				{
+					"back_end_developer": "Desenvolvedor Back-End",
+					"database_developer": "Implementador de Banco de dados",
+					"agile_methodologies_enthusiastic": "Entusiasta de metodologias ágeis",
+					"linux_based_so_fan": "Fã de sistemas operacionais baseados em linux"
+				}
+			}
+		}
 	},
 	"config":
 	{
-		"language": [
+		"default_language": "portuguese",
+		"languages": [
 			"portuguese", "english"
 		]
 	}
