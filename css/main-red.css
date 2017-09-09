@@ -1027,6 +1027,7 @@ ul.social-links li:last-child a {
   font-weight: 700;
   margin-right: 12px;
   color: #222;
+  width: 101px;
 }
 
 .info-list li .title:after {

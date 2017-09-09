@@ -4,11 +4,10 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<title>CV - Hullick</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<meta name="description" content="Unique - Responsive vCard Template" />
 	<meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Unique, portfolio" />
-	<meta name="author" content="lmtheme" />
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 	<link rel="stylesheet" href="css/normalize.css" type="text/css">
@@ -52,20 +51,20 @@
 				<!-- Main menu -->
 				<ul id="nav" class="site-main-menu">
 					<li>
-						<a class="pt-trigger" href="#home" data-animation="21"><i class="menu-icon pe-7s-icon pe-7s-home"></i>Início</a>
+						<a class="pt-trigger" href="#home" id="home" data-animation="21"><i class="menu-icon pe-7s-icon pe-7s-home"></i><span></span></a>
 						<!-- href value = data-id without # of .pt-page. -->
 					</li>
 					<li>
-						<a class="pt-trigger" href="#about_me" data-animation="17"><i class="menu-icon pe-7s-icon pe-7s-user"></i>Sobre</a>
+						<a class="pt-trigger" href="#about_me" id="about" data-animation="17"><i class="menu-icon pe-7s-icon pe-7s-user"></i><span></span></a>
 					</li>
 					<li>
-						<a class="pt-trigger" href="#resume" data-animation="18"><i class="menu-icon pe-7s-icon pe-7s-id"></i>Experiências</a>
+						<a class="pt-trigger" href="#resume" id="resume" data-animation="18"><i class="menu-icon pe-7s-icon pe-7s-id"></i><span></span></a>
 					</li>
 					<li>
-						<a class="pt-trigger" href="#portfolio" data-animation="19"><i class="menu-icon pe-7s-icon pe-7s-portfolio"></i>Portfolio</a>
+						<a class="pt-trigger" href="#portfolio" id="portfolio" data-animation="19"><i class="menu-icon pe-7s-icon pe-7s-portfolio"></i><span></span></a>
 					</li>
 					<li>
-						<a class="pt-trigger" href="#contact" data-animation="20"><i class="menu-icon pe-7s-icon pe-7s-mail"></i>Formas de contato</a>
+						<a class="pt-trigger" href="#contact" id="contact" data-animation="20"><i class="menu-icon pe-7s-icon pe-7s-mail"></i><span></span></a>
 					</li>
 				</ul>
 				<!-- /Main menu -->
@@ -95,6 +94,7 @@
 							<div class="home-page-block">
 								<h2>Hullick Bartholo</h2>
 								<div class="owl-carousel text-rotation">
+									<!--
 									<div class="item">
 										<p class="home-page-description">Desenvolvedor Back-end</p>
 									</div>
@@ -107,6 +107,7 @@
 									<div class="item">
 										<p class="home-page-description">Fã de sistemas baseados em linux</p>
 									</div>
+									-->
 								</div>
 							</div>
 						</div>
@@ -118,8 +119,8 @@
 						<div class="section-inner">
 							<div class="section-title-block">
 								<div class="section-title-wrapper clearfix">
-									<h2 class="section-title">Sobre o Hullick</h2>
-									<h5 class="section-description">Implementador, arquiteto, solucionador</h5>
+									<h2 class="section-title" id="about_title"></h2>
+									<h5 class="section-description" id="about_description"></h5>
 								</div>
 							</div>
 							<div class="row">
@@ -129,19 +130,19 @@
 									</div>
 								</div>
 								<div class="col-sm-6 col-md-6 col-lg-4">
-									<h3>I am Web Designer @ Company.com</h3>
-									<p>Praesent ut tortor consectetur, semper sapien non, lacinia augue. Aenean arcu libero, facilisis et nisi non, tempus faucibus tortor. Mauris vel nulla aliquam, pellentesque enim ac, faucibus tortor. Nulla odio nibh, cursus sit amet urna id, dignissim euismod augue.</p>
-									<p>Duis sollicitudin, libero porttitor rutrum ultrices, turpis lorem fermentum justo, quis ornare augue tortor non est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+									<h3 id="about_subpage_title"></h3>
+									<p style="text-align: justify;" id="about_subpage_text_1"></p>
+									<p style="text-align: justify;" id="about_subpage_text_2"></p>
 								</div>
 								<div class="col-sm-6 col-md-6 col-lg-4 subpage-block">
 									<ul class="info-list">
-										<li><span class="title">Idade</span><span class="value">29</span></li>
-										<li><span class="title">Residence</span><span class="value">USA</span></li>
-										<li><span class="title">Address</span><span class="value">88 Some Street, Some Town</span></li>
-										<li><span class="title">e-mail</span><span class="value"><a href="mailto:email@example.com">email@example.com</a></span></li>
-										<li><span class="title">Phone</span><span class="value">+0123 123 456 789</span></li>
-										<li><span class="title">Skype</span><span class="value">alex.smith</span></li>
-										<li><span class="title">Freelance</span><span class="value available">Available</span></li>
+										<li><span class="title" id="age"></span><span class="value" id="age_value"></span><span id="age_value_text" class="value"></span></li>
+										<li><span class="title" id="nationality"></span><span class="value" id="nationality_value"></span></li>
+										<li><span class="title" id="address"></span><span class="value" id="address_value"></span></li>
+										<li><span class="title" id="email"></span><span class="value"><a id="email_value"></a></span></li>
+										<li><span class="title" id="phone"></span><span class="value"><a id="phone_value"></a></span></li>
+										<li><span class="title" id="skype"></span><span class="value"><a id="skype_value"></a></span></li>
+										<li><span class="title" id="freelance"></span><span class="value available" id="freelance_value"></span></li>
 									</ul>
 									<ul class="social-links">
 										<li><a class="tip social-button" href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
@@ -751,7 +752,7 @@
 	<!-- Demo Color changer -->
 	<a id="lm_demo_panel_switcher" class="lm-demo-panel-switcher right"><i class="fa fa-gear"></i></a>
 	<div id="lm_demo_panel" class="lm-demo-panel right panel-color-red active">
-		<div class="demo-panel-title">Configurações</div>
+		<div class="demo-panel-title" id="configurations"></div>
 		<!--
 		<div id="t_style" class="demo-panel-options">
 			<a class="t-style-switcher" data-id="template-style-light">
@@ -783,18 +784,16 @@
 			</a>
 		</div>
 		-->
-		<div class="demo-panel-title"></div>
+		<div class="demo-panel-title" id="language">Linguagem</div>
 		<div id="header_color" class="demo-panel-options">
-			<a class="inverse h-color-switcher" data-id="header-color-light">
-				<div class="preview h-color h-color-1 w-border">&nbsp;</div>
-			</a>
-			<a class="h-color-switcher" data-id="header-color-main">
-				<div class="preview h-color h-color-2">&nbsp;</div>
-			</a>
 			<a class="current-h-color h-color-switcher" data-id="header-color-dark">
-				<div class="preview h-color h-color-3">&nbsp;</div>
+				<div class="preview h-color h-color-3" id="portuguese" style="color: #FFFFFF; text-align: center;">PT</div>
+			</a>
+			<a class="h-color-switcher" data-id="header-color-dark">
+				<div class="preview h-color h-color-3" id="english" style="color: #FFFFFF; text-align: center;">EN</div>
 			</a>
 		</div>
+		<!--
 		<div class="demo-panel-title mobile-hidden">Nav Position</div>
 		<div id="header_position" class="demo-panel-options mobile-hidden">
 			<a class="current-layout layout-switcher" data-id="layout-menu-left">
@@ -807,6 +806,7 @@
 				<div class="preview layout bottom">Bottom</div>
 			</a>
 		</div>
+		-->
 	</div>
 	<!-- /Demo Color changer -->
 	<script src="js/bootstrap.min.js"></script>
@@ -824,6 +824,17 @@
 	<!-- Demo Color changer Script -->
 	<script src="preview/lmpixels-demo-panel.js"></script>
 	<!-- /Demo Color changer Script -->
+	<!-- Sessão de troca de linguagem -->
+	<script type="text/javascript">
+	$("#english").click(function(event) {
+		trocarTextosDosElementosParaLinguagem("english")
+	});
+
+	$("#portuguese").click(function(event) {
+		trocarTextosDosElementosParaLinguagem("portuguese")
+	});
+	</script>
+	<!-- Sessão de dados do profissional -->
 </body>
 
 </html>

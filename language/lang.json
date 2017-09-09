@@ -5,12 +5,109 @@
 		{
 			"blocks":
 			{
+				"configuration":
+				{
+					"configurations": "Configurações",
+					"language": "Linguagem"
+				},
 				"text_carousel":
 				{
-					"back_end_developer": "Desenvolvedor Back-End",
-					"database_developer": "Implementador de Banco de dados",
+					"back_end_developer": "Desenvolvedor back-end",
+					"database_developer": "Implementador de banco de dados",
 					"agile_methodologies_enthusiastic": "Entusiasta de metodologias ágeis",
-					"linux_based_so_fan": "Fã de sistemas operacionais baseados em linux"
+					"linux_based_os_fan": "Fã de sistemas operacionais baseados em linux"
+				},
+				"menu":
+				{
+					"home": "Início",
+					"about": "Sobre",
+					"resume": "Experiência",
+					"portfolio": "Portifólio",
+					"contact": "Contato"
+				},
+				"about":
+				{
+					"title": "Sobre o Hullick",
+					"description": "Implementador, Arquiteto de software, Solucionador",
+					"subpage":
+					{
+						"title": "Um implementador de softwares",
+						"text_1": "Apresento a vocês um profissional versátil, capaz de ajudar a sua empresa a expandir suas possibilidades atuações e de lucros com a implementação de tecnologias da informação.",
+						"text_2": "Com o passar dos anos, consolidou-se na área de desenvolvimento, capacitando-se em linguagens de programação, frameworks e ferramentas, porém, por sempre almejar mais conhecimentos, adaptou-se as áreas relacionadas a virtualização de servidores e infra-estrutura de redes."
+					},
+					"info":
+					{
+						"age": "Idade",
+						"age_value_text": " anos",
+						"nationality": "Nacionalidade",
+						"nationality_value": "Brasileiro",
+						"address": "Endereço",
+						"address_value": "Rio de Janeiro, RJ, Penha",
+						"email": "E-mail",
+						"email_value": "hullick02@gmail.com",
+						"phone": "Telefone",
+						"phone_value": "+55021994088196",
+						"phone_value_formated": "+55 (021) 99408-8196",
+						"skype": "Skype",
+						"skype_value": "hullick02",
+						"freelance": "Freelance",
+						"freelance_value": "Disponível"
+					}
+				}
+			}
+		},
+		"english":
+		{
+			"blocks":
+			{
+				"configuration":
+				{
+					"configurations": "Configurations",
+					"language": "Language"
+				},
+				"text_carousel":
+				{
+					"back_end_developer": "Back-end developer",
+					"database_developer": "Database developer",
+					"agile_methodologies_enthusiastic": "Agile methodologies enthusiastic",
+					"linux_based_os_fan": "Linux based operational systems fan"
+				},
+				"menu":
+				{
+					"home": "Home",
+					"about": "About",
+					"resume": "Resume",
+					"portfolio": "Portfolio",
+					"contact": "Contact"
+				},
+				"about":
+				{
+					"title": "About Hullick",
+					"description": "Developer, Software architect, Solver",
+					"subpage":
+					{
+						"title": "A software developer",
+						"text_1": "I introduce you a versatile professional, able to help your business to expand its profits and operational possibilities with the integration of information technologies.",
+						"text_2": "Over the years, consolidated in development area, training in programming languages, frameworks and tools, however, for always aiming more knowledge, it has adapted to areas related to server virtualization and network infraestructure."
+					},
+					"info":
+					{
+						"age": "Age",
+						"age_value_text": " years old",
+						"nationality": "Nationality",
+						"nationality_value": "Brasilian",
+						"address": "Address",
+						"address_value": "Rio de Janeiro, RJ, Penha",
+						"email": "E-mail",
+						"email_value": "hullick02@gmail.com",
+						"phone": "Phone",
+						"phone_value": "+55021994088196",
+						"phone_value_formated": "+55 (021) 99408-8196",
+						"skype": "Skype",
+						"skype_value": "hullick02",
+						"freelance": "Freelance",
+						"freelance_value": "Avaliable"
+					}
 				}
 			}
 		}

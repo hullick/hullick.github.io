@@ -153,7 +153,7 @@ a.lm-demo-panel-switcher.right {
     position: absolute;
     display:inline-block;
     left: 50%;
-    top: 50%;
+    top: 12%;
     margin-top: -4px;
     margin-left: -2px;
     content: '';
