@@ -55,6 +55,31 @@ function trocarTextosDosElementosParaLinguagem(linguagem) {
 		$("#skype_value").attr('href', 'skype:' + jsonLanguageLoaded.terms[linguagem].blocks.about.info.skype_value + '?chat');
 		modificarTextosSobre("freelance", jsonLanguageLoaded.terms[linguagem].blocks.about.info.freelance);
 		modificarTextosSobre("freelance_value", jsonLanguageLoaded.terms[linguagem].blocks.about.info.freelance_value);
+
+		modificarTextosProeficiencias("proficiencies_title", jsonLanguageLoaded.terms[linguagem].blocks.about.proficiencies.title);
+		modificarTextosProeficiencias("web_development", jsonLanguageLoaded.terms[linguagem].blocks.about.proficiencies.web_development);
+		modificarTextosProeficiencias("web_development_text", jsonLanguageLoaded.terms[linguagem].blocks.about.proficiencies.web_development_text);
+		modificarTextosProeficiencias("back_end_language", jsonLanguageLoaded.terms[linguagem].blocks.about.proficiencies.back_end_language);
+		modificarTextosProeficiencias("back_end_language_text", jsonLanguageLoaded.terms[linguagem].blocks.about.proficiencies.back_end_language_text);
+		modificarTextosProeficiencias("server_virtualization", jsonLanguageLoaded.terms[linguagem].blocks.about.proficiencies.server_virtualization);
+		modificarTextosProeficiencias("server_virtualization_text", jsonLanguageLoaded.terms[linguagem].blocks.about.proficiencies.server_virtualization_text);
+		modificarTextosProeficiencias("mobile", jsonLanguageLoaded.terms[linguagem].blocks.about.proficiencies.mobile);
+		modificarTextosProeficiencias("mobile_text", jsonLanguageLoaded.terms[linguagem].blocks.about.proficiencies.mobile_text);
+
+		modificarTextosFatosInteressantes("interesting_facts_title", jsonLanguageLoaded.terms[linguagem].blocks.about.interesting_facts.title);
+		modificarTextosFatosInteressantes("working_hours", jsonLanguageLoaded.terms[linguagem].blocks.about.interesting_facts.working_hours);
+		modificarTextosFatosInteressantes("finished_projects", jsonLanguageLoaded.terms[linguagem].blocks.about.interesting_facts.finished_projects);
+		modificarTextosFatosInteressantes("coffee_consumed", jsonLanguageLoaded.terms[linguagem].blocks.about.interesting_facts.coffee_consumed);
+
+		modificarTextosCurriculo("resume_title", jsonLanguageLoaded.terms[linguagem].blocks.resume.title)
+		modificarTextosCurriculo("experience_time", jsonLanguageLoaded.terms[linguagem].blocks.resume.experience_time)
+
+		modificarTituloEducacao(jsonLanguageLoaded.terms[linguagem].blocks.resume.education.title)
+
+		jsonLanguageLoaded.terms[linguagem].blocks.resume.education.list.forEach(function(educacao, indice) {
+			console.log(educacao)
+			adicionarEducacao(educacao, indice);
+		});
 	} else {
 		informarErroDeCarregamentoDeJsonDeLinguagem()
 	}
@@ -94,6 +119,65 @@ function modificarTextosSobre(id, texto) {
 		$("#" + id).parent().fadeOut('400', function() {
 			$("#" + id).text(texto)
 			$("#" + id).parent().fadeIn();
+		});
+	}
+}
+
+function modificarTextosProeficiencias(id, texto) {
+	$("#" + id).fadeOut('400', function() {
+		$("#" + id).text(texto).fadeIn();
+	});
+}
+
+function modificarTextosFatosInteressantes(id, texto) {
+	$("#" + id).fadeOut('400', function() {
+		$("#" + id).text(texto).fadeIn();
+	});
+}
+
+function modificarTextosCurriculo(id, texto) {
+	$("#" + id).fadeOut('400', function() {
+		$("#" + id).text(texto).fadeIn();
+	});
+}
+
+function modificarTituloEducacao(titulo) {
+	$("#education").fadeOut('400', function() {
+		$("#education").text(titulo).fadeIn();
+	});
+}
+
+function adicionarEducacao(educacao, indice) {
+	if ($("#" + indice).length == 0) {
+		if (educacao.year != undefined &&
+			educacao.course_name != undefined &&
+			educacao.institute != undefined &&
+			educacao.description != undefined) {
+			$("#education_timeline").append('<div class="timeline-event te-primary" id="' + indice + '">' +
+				'<h5 class="event-date" id="year">' + educacao.year + '</h5>' +
+				'<h4 class="event-name" id="course_name">' + educacao.course_name + '</h4>' +
+				'<span class="event-description" id="institute">' + educacao.institute + '</span>' +
+				'<p id="description">' + educacao.description + '</p>' +
+				'</div>').fadeIn('400');
+		} else {
+			console.log("Nem todas as informações sobre a educação " + indice + " foram passadas.");
+		}
+	} else {
+
+		$("#" + indice + " #year").fadeOut('400', function() {
+			$("#" + indice + " #year").text(educacao.year).fadeIn();
+		});
+
+		$("#" + indice + " #course_name").fadeOut('400', function() {
+			$("#" + indice + " #course_name").text(educacao.course_name).fadeIn();
+		});
+
+		$("#" + indice + " #institute").fadeOut('400', function() {
+			$("#" + indice + " #institute").text(educacao.institute).fadeIn();
+		});
+
+		$("#" + indice + " #description").fadeOut('400', function() {
+			$("#" + indice + " #description").text(educacao.description).fadeIn();
 		});
 	}
 }

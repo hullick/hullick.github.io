@@ -21,7 +21,7 @@
 				{
 					"home": "Início",
 					"about": "Sobre",
-					"resume": "Experiência",
+					"resume": "Currículo",
 					"portfolio": "Portifólio",
 					"contact": "Contato"
 				},
@@ -32,7 +32,7 @@
 					"subpage":
 					{
 						"title": "Um implementador de softwares",
-						"text_1": "Apresento a vocês um profissional versátil, capaz de ajudar a sua empresa a expandir suas possibilidades atuações e de lucros com a implementação de tecnologias da informação.",
+						"text_1": "Apresento a vocês um profissional versátil, capaz de ajudar a sua empresa a expandir suas possibilidades de atuação e de lucros com a implementação de tecnologias da informação.",
 						"text_2": "Com o passar dos anos, consolidou-se na área de desenvolvimento, capacitando-se em linguagens de programação, frameworks e ferramentas, porém, por sempre almejar mais conhecimentos, adaptou-se as áreas relacionadas a virtualização de servidores e infra-estrutura de redes."
 					},
 					"info":
@@ -52,6 +52,48 @@
 						"skype_value": "hullick02",
 						"freelance": "Freelance",
 						"freelance_value": "Disponível"
+					},
+					"proficiencies":
+					{
+						"title": "Proeficiências",
+						"web_development": "Desenvolvimento web",
+						"web_development_text": "Conhecimentos da suíte atual de desenvolvimento, necessária para o rápido e eficaz desenvolvimento de aplicações para web.",
+						"back_end_language": "Linguagens de background",
+						"back_end_language_text": "Implementações nas principais linguagens e ferramentas para desenvolvimento de sistemas, bem como integrações com outros.",
+						"server_virtualization": "Virtualização de servidores",
+						"server_virtualization_text": "Conhecimentos em virtualização de servidores, que sejam em arquiteturas completas, ou orientadas a microserviços..",
+						"mobile": "Plataformas móveis",
+						"mobile_text": "Capacidade de desenvolver para as plataformas móveis atuantes no mercado, implementado de formas híbridas ou de formas nativas."
+					},
+					"interesting_facts":
+					{
+						"title": "Fatos interessantes",
+						"web_development": "Desenvolvimento web",
+						"working_hours": "Horas trabalhadas",
+						"finished_projects": "Projetos finalizados",
+						"coffee_consumed": "Copos de café consumidos"
+					}
+				},
+				"resume":
+				{
+					"title": "Currículo",
+					"experience_time": "2 anos desenvolvendo",
+					"education":
+					{
+						"title": "Educação",
+						"list": [
+						{
+							"year": "2014",
+							"course_name": "Especialização linguagem java",
+							"institute": "Forsoft - Infnet",
+							"description": "Curso com demonstrações práticas sobre o dia-a-dia dos profissionais da área, cobrindo desde as áreas iniciais de projetos - modelagem de sistemas - até suas implementações, sejam em linguagens de programação ou de banco de dados."
+						},
+						{
+							"year": "2013",
+							"course_name": "Técnico em informática",
+							"institute": "Senac Rio - Copacabana",
+							"description": "Curso com demonstrações práticas sobre o dia-a-dia dos profissionais da área, cobrindo desde as áreas iniciais de projetos - modelagem de sistemas - até suas implementações, sejam em linguagens de programação ou de banco de dados."
+						}]
 					}
 				}
 			}
@@ -107,6 +149,42 @@
 						"skype_value": "hullick02",
 						"freelance": "Freelance",
 						"freelance_value": "Avaliable"
+					},
+					"proficiencies":
+					{
+						"title": "Proficiencies",
+						"web_development": "Web development",
+						"web_development_text": "Knowledge in the current development suite, required for fast and effective web application development.",
+						"back_end_language": "Back-end languages",
+						"back_end_language_text": "Development in the main languages ​​and tools for systems development, as well as integrations with anothers.",
+						"server_virtualization": "Server virtualization",
+						"server_virtualization_text": "Knowledge in virtualization of servers, that are in complete architectures, microservices' oriented.",
+						"mobile": "Mobile",
+						"mobile_text": "Ability to develop for mobile platforms operating in the market, implemented in hybrid or native forms."
+					},
+					"interesting_facts":
+					{
+						"title": "Interesting facts",
+						"web_development": "Web development",
+						"working_hours": "Working hours",
+						"finished_projects": "Finished projects",
+						"coffee_consumed": "Cups of cofee consumed"
+					}
+				},
+				"resume":
+				{
+					"title": "Resume",
+					"experience_time": "2 years development",
+					"education":
+					{
+						"title": "Education",
+						"list": [
+						{
+							"year": "2014",
+							"course_name": "Specialization in Java language",
+							"institute": "Forsoft - Infnet",
+							"description": "Course with practical demonstrations about the day-to-day of the professionals, covering from the initial areas of projects - modeling of systems - to their implementations, whether in programming languages ​​or database."
+						}]
 					}
 				}
 			}
