@@ -83,16 +83,22 @@
 						"title": "Educação",
 						"list": [
 						{
-							"year": "2014",
-							"course_name": "Especialização linguagem java",
-							"institute": "Forsoft - Infnet",
+							"year": "2014 - 2018",
+							"course_name": "Graduação em ciência da computação",
+							"institute": "Infnet",
+							"description": "."
+						},
+						{
+							"year": "2013 - 2014",
+							"course_name": "Especialização em linguagem java",
+							"institute": "Infnet",
 							"description": "Curso com demonstrações práticas sobre o dia-a-dia dos profissionais da área, cobrindo desde as áreas iniciais de projetos - modelagem de sistemas - até suas implementações, sejam em linguagens de programação ou de banco de dados."
 						},
 						{
-							"year": "2013",
+							"year": "2012 - 2013",
 							"course_name": "Técnico em informática",
 							"institute": "Senac Rio - Copacabana",
-							"description": "Curso com demonstrações práticas sobre o dia-a-dia dos profissionais da área, cobrindo desde as áreas iniciais de projetos - modelagem de sistemas - até suas implementações, sejam em linguagens de programação ou de banco de dados."
+							"description": "Curso com abordagem técnica sobre montagem e manutenção de microcomputadores, introdução a implementação de banco de dados, linguagens e ferramentas voltadas para a web e gerenciamento e modelagem de projetos."
 						}]
 					}
 				}
@@ -180,10 +186,22 @@
 						"title": "Education",
 						"list": [
 						{
+							"year": "2014 - 2018",
+							"course_name": "Undergraduate in computer science",
+							"institute": "Infnet",
+							"description": "."
+						},
+						{
 							"year": "2014",
-							"course_name": "Specialization in Java language",
-							"institute": "Forsoft - Infnet",
+							"course_name": "Specialization in java language",
+							"institute": "Infnet",
 							"description": "Course with practical demonstrations about the day-to-day of the professionals, covering from the initial areas of projects - modeling of systems - to their implementations, whether in programming languages ​​or database."
+						},
+						{
+							"year": "2013",
+							"course_name": "Computer Technician",
+							"institute": "Senac Rio - Copacabana",
+							"description": "Course with technical approach on assembly and maintenance of microcomputers, introduction of database development, tools and languages directed to web development and management and modeling of projects."
 						}]
 					}
 				}
