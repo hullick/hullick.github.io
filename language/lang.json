@@ -86,7 +86,7 @@
 							"year": "2014 - 2018",
 							"course_name": "Graduação em ciência da computação",
 							"institute": "Infnet",
-							"description": "."
+							"description": "Formação com utilização de técnicas para desenvolvimento de aplicações comerciais e científicas, dando ênfase à integração entre diferentes áreas e em atividades práticas das áreas estudadas."
 						},
 						{
 							"year": "2013 - 2014",
@@ -99,6 +99,17 @@
 							"course_name": "Técnico em informática",
 							"institute": "Senac Rio - Copacabana",
 							"description": "Curso com abordagem técnica sobre montagem e manutenção de microcomputadores, introdução a implementação de banco de dados, linguagens e ferramentas voltadas para a web e gerenciamento e modelagem de projetos."
+						}]
+					},
+					"experience":
+					{
+						"title": "Experiência",
+						"list": [
+						{
+							"experience_range_time": "Abr 2015 - Dez 2015",
+							"job_title": "Desenvolvedor web e móvel híbrido",
+							"company": "BC Agência",
+							"description": "TESTE."
 						}]
 					}
 				}
@@ -189,7 +200,30 @@
 							"year": "2014 - 2018",
 							"course_name": "Undergraduate in computer science",
 							"institute": "Infnet",
-							"description": "."
+							"description": "Graduation with the use of techniques for the development of commercial and scientific applications, emphasizing the integration between different areas and in practical activities of the studied areas."
+						},
+						{
+							"year": "2014",
+							"course_name": "Specialization in java language",
+							"institute": "Infnet",
+							"description": "Course with practical demonstrations about the day-to-day of the professionals, covering from the initial areas of projects - modeling of systems - to their implementations, whether in programming languages ​​or database."
+						},
+						{
+							"year": "2013",
+							"course_name": "Computer Technician",
+							"institute": "Senac Rio - Copacabana",
+							"description": "Course with technical approach on assembly and maintenance of microcomputers, introduction of database development, tools and languages directed to web development and management and modeling of projects."
+						}]
+					},
+					"experience":
+					{
+						"title": "Experience",
+						"list": [
+						{
+							"year": "2014 - 2018",
+							"course_name": "Undergraduate in computer science",
+							"institute": "Infnet",
+							"description": "Graduation with the use of techniques for the development of commercial and scientific applications, emphasizing the integration between different areas and in practical activities of the studied areas."
 						},
 						{
 							"year": "2014",

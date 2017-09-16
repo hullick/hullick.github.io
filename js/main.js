@@ -77,9 +77,15 @@ function trocarTextosDosElementosParaLinguagem(linguagem) {
 		modificarTituloEducacao(jsonLanguageLoaded.terms[linguagem].blocks.resume.education.title)
 
 		jsonLanguageLoaded.terms[linguagem].blocks.resume.education.list.forEach(function(educacao, indice) {
-			console.log(educacao)
 			adicionarEducacao(educacao, indice);
 		});
+
+		modificarTituloExperiencia(jsonLanguageLoaded.terms[linguagem].blocks.resume.experience.title)
+
+		jsonLanguageLoaded.terms[linguagem].blocks.resume.experience.list.forEach(function(experiencia, indice) {
+			adicionarExperiencia(experiencia, indice);
+		});
+
 	} else {
 		informarErroDeCarregamentoDeJsonDeLinguagem()
 	}
@@ -142,13 +148,13 @@ function modificarTextosCurriculo(id, texto) {
 }
 
 function modificarTituloEducacao(titulo) {
-	$("#education").fadeOut('400', function() {
-		$("#education").text(titulo).fadeIn();
+	$("#education_title").fadeOut('400', function() {
+		$("#education_title").text(titulo).fadeIn();
 	});
 }
 
 function adicionarEducacao(educacao, indice) {
-	if ($("#" + indice).length == 0) {
+	if ($("#education_timeline #" + indice).length == 0) {
 		if (educacao.year != undefined &&
 			educacao.course_name != undefined &&
 			educacao.institute != undefined &&
@@ -157,27 +163,70 @@ function adicionarEducacao(educacao, indice) {
 				'<h5 class="event-date" id="year">' + educacao.year + '</h5>' +
 				'<h4 class="event-name" id="course_name">' + educacao.course_name + '</h4>' +
 				'<span class="event-description" id="institute">' + educacao.institute + '</span>' +
-				'<p id="description">' + educacao.description + '</p>' +
+				'<p id="description" style="text-align: justify;">' + educacao.description + '</p>' +
 				'</div>').fadeIn('400');
 		} else {
 			console.log("Nem todas as informações sobre a educação " + indice + " foram passadas.");
 		}
 	} else {
 
-		$("#" + indice + " #year").fadeOut('400', function() {
-			$("#" + indice + " #year").text(educacao.year).fadeIn();
+		$("#education_timeline #" + indice + " #year").fadeOut('400', function() {
+			$("#education_timeline #" + indice + " #year").text(educacao.year).fadeIn();
 		});
 
-		$("#" + indice + " #course_name").fadeOut('400', function() {
-			$("#" + indice + " #course_name").text(educacao.course_name).fadeIn();
+		$("#education_timeline #" + indice + " #course_name").fadeOut('400', function() {
+			$("#education_timeline #" + indice + " #course_name").text(educacao.course_name).fadeIn();
 		});
 
-		$("#" + indice + " #institute").fadeOut('400', function() {
-			$("#" + indice + " #institute").text(educacao.institute).fadeIn();
+		$("#education_timeline #" + indice + " #institute").fadeOut('400', function() {
+			$("#education_timeline #" + indice + " #institute").text(educacao.institute).fadeIn();
 		});
 
-		$("#" + indice + " #description").fadeOut('400', function() {
-			$("#" + indice + " #description").text(educacao.description).fadeIn();
+		$("#education_timeline #" + indice + " #description").fadeOut('400', function() {
+			$("#education_timeline #" + indice + " #description").text(educacao.description).fadeIn();
+		});
+	}
+}
+
+function modificarTituloExperiencia(titulo) {
+	$("#experience_title").fadeOut('400', function() {
+		$("#experience_title").text(titulo).fadeIn();
+	});
+}
+
+function adicionarExperiencia(experiencia, indice) {
+	if ($("#experience_timeline #" + indice).length == 0) {
+		if (
+			experiencia.experience_range_time != undefined &&
+			experiencia.job_title != undefined &&
+			experiencia.company != undefined &&
+			experiencia.description != undefined
+		) {
+			$("#experience_timeline").append('<div class="timeline-event te-primary" id="' + indice + '">' +
+				'<h5 class="event-date" id="experience_range_time">' + experiencia.experience_range_time + '</h5>' +
+				'<h4 class="event-name" id="job_title">' + experiencia.job_title + '</h4>' +
+				'<span class="event-description" id="company">' + experiencia.company + '</span>' +
+				'<p id="description" style="text-align: justify;">' + experiencia.description + '</p>' +
+				'</div>').fadeIn('400');
+		} else {
+			console.log("Nem todas as informações sobre a educação " + indice + " foram passadas.");
+		}
+	} else {
+
+		$("#experience_timeline #" + indice + " #experience_range_time").fadeOut('400', function() {
+			$("#experience_timeline #" + indice + " #experience_range_time").text(experiencia.experience_range_time).fadeIn();
+		});
+
+		$("#experience_timeline #" + indice + " #job_title").fadeOut('400', function() {
+			$("#experience_timeline #" + indice + " #job_title").text(experiencia.job_title).fadeIn();
+		});
+
+		$("#experience_timeline #" + indice + " #company").fadeOut('400', function() {
+			$("#experience_timeline #" + indice + " #company").text(experiencia.company).fadeIn();
+		});
+
+		$("#experience_timeline #" + indice + " #description").fadeOut('400', function() {
+			$("#experience_timeline #" + indice + " #description").text(experiencia.description).fadeIn();
 		});
 	}
 }
