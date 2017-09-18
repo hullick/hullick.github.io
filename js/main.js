@@ -29,7 +29,7 @@ function trocarTextosDosElementosParaLinguagem(linguagem) {
 		modificarTextosMenu("home", jsonLanguageLoaded.terms[linguagem].blocks.menu.home);
 		modificarTextosMenu("about", jsonLanguageLoaded.terms[linguagem].blocks.menu.about);
 		modificarTextosMenu("resume", jsonLanguageLoaded.terms[linguagem].blocks.menu.resume);
-		modificarTextosMenu("portfolio", jsonLanguageLoaded.terms[linguagem].blocks.menu.portfolio);
+		// modificarTextosMenu("portfolio", jsonLanguageLoaded.terms[linguagem].blocks.menu.portfolio);
 		modificarTextosMenu("contact", jsonLanguageLoaded.terms[linguagem].blocks.menu.contact);
 
 		modificarTextosSobre("about_title", jsonLanguageLoaded.terms[linguagem].blocks.about.title);
@@ -86,6 +86,12 @@ function trocarTextosDosElementosParaLinguagem(linguagem) {
 			adicionarExperiencia(experiencia, indice);
 		});
 
+		jsonLanguageLoaded.terms[linguagem].blocks.resume.skills.list.forEach((habilidade, indice) => {
+			adicionarHabilidade(habilidade, indice);
+		})
+
+		modificarTituloDownload(jsonLanguageLoaded.terms[linguagem].blocks.resume.download_cv);
+
 	} else {
 		informarErroDeCarregamentoDeJsonDeLinguagem()
 	}
@@ -93,7 +99,7 @@ function trocarTextosDosElementosParaLinguagem(linguagem) {
 
 function modificarTextoConfiguracao(id, texto) {
 	$("#" + id).fadeOut('400', function() {
-		$("#" + id).text(texto).fadeIn();
+		$(this).text(texto).fadeIn();
 	});
 }
 
@@ -112,44 +118,44 @@ function modificarTextoIndiceCarrosselDeTextos(id, texto) {
 
 function modificarTextosMenu(id, texto) {
 	$("#" + id + " span").fadeOut('400', function() {
-		$("#" + id + " span").text(texto).fadeIn();
+		$(this).text(texto).fadeIn();
 	});
 }
 
 function modificarTextosSobre(id, texto) {
 	if (!$("#" + id).is('a'))
 		$("#" + id).fadeOut('400', function() {
-			$("#" + id).text(texto).fadeIn();
+			$(this).text(texto).fadeIn();
 		});
 	else {
 		$("#" + id).parent().fadeOut('400', function() {
-			$("#" + id).text(texto)
-			$("#" + id).parent().fadeIn();
+			$(this).text(texto)
+			$(this).parent().fadeIn();
 		});
 	}
 }
 
 function modificarTextosProeficiencias(id, texto) {
 	$("#" + id).fadeOut('400', function() {
-		$("#" + id).text(texto).fadeIn();
+		$(this).text(texto).fadeIn();
 	});
 }
 
 function modificarTextosFatosInteressantes(id, texto) {
 	$("#" + id).fadeOut('400', function() {
-		$("#" + id).text(texto).fadeIn();
+		$(this).text(texto).fadeIn();
 	});
 }
 
 function modificarTextosCurriculo(id, texto) {
 	$("#" + id).fadeOut('400', function() {
-		$("#" + id).text(texto).fadeIn();
+		$(this).text(texto).fadeIn();
 	});
 }
 
 function modificarTituloEducacao(titulo) {
 	$("#education_title").fadeOut('400', function() {
-		$("#education_title").text(titulo).fadeIn();
+		$(this).text(titulo).fadeIn();
 	});
 }
 
@@ -171,26 +177,26 @@ function adicionarEducacao(educacao, indice) {
 	} else {
 
 		$("#education_timeline #" + indice + " #year").fadeOut('400', function() {
-			$("#education_timeline #" + indice + " #year").text(educacao.year).fadeIn();
+			$(this).text(educacao.year).fadeIn();
 		});
 
 		$("#education_timeline #" + indice + " #course_name").fadeOut('400', function() {
-			$("#education_timeline #" + indice + " #course_name").text(educacao.course_name).fadeIn();
+			$(this).text(educacao.course_name).fadeIn();
 		});
 
 		$("#education_timeline #" + indice + " #institute").fadeOut('400', function() {
-			$("#education_timeline #" + indice + " #institute").text(educacao.institute).fadeIn();
+			$(this).text(educacao.institute).fadeIn();
 		});
 
 		$("#education_timeline #" + indice + " #description").fadeOut('400', function() {
-			$("#education_timeline #" + indice + " #description").text(educacao.description).fadeIn();
+			$(this).text(educacao.description).fadeIn();
 		});
 	}
 }
 
 function modificarTituloExperiencia(titulo) {
 	$("#experience_title").fadeOut('400', function() {
-		$("#experience_title").text(titulo).fadeIn();
+		$(this).text(titulo).fadeIn();
 	});
 }
 
@@ -214,21 +220,65 @@ function adicionarExperiencia(experiencia, indice) {
 	} else {
 
 		$("#experience_timeline #" + indice + " #experience_range_time").fadeOut('400', function() {
-			$("#experience_timeline #" + indice + " #experience_range_time").text(experiencia.experience_range_time).fadeIn();
+			$(this).text(experiencia.experience_range_time).fadeIn();
 		});
 
 		$("#experience_timeline #" + indice + " #job_title").fadeOut('400', function() {
-			$("#experience_timeline #" + indice + " #job_title").text(experiencia.job_title).fadeIn();
+			$(this).text(experiencia.job_title).fadeIn();
 		});
 
 		$("#experience_timeline #" + indice + " #company").fadeOut('400', function() {
-			$("#experience_timeline #" + indice + " #company").text(experiencia.company).fadeIn();
+			$(this).text(experiencia.company).fadeIn();
 		});
 
 		$("#experience_timeline #" + indice + " #description").fadeOut('400', function() {
-			$("#experience_timeline #" + indice + " #description").text(experiencia.description).fadeIn();
+			$(this).text(experiencia.description).fadeIn();
 		});
 	}
+}
+
+function adicionarHabilidade(habilidade, habilidadeIndice) {
+	if ($("#skills #" + habilidadeIndice).length == 0) {
+		if (
+			habilidade.skill_title != undefined
+		) {
+			var blocoHabilidade = '<div id="' + habilidadeIndice + '"><div class="block-title">' +
+				'<h3 id="skill_title">' + habilidade.skill_title + '</h3>' +
+				'</div><div class="skills-info">';
+			habilidade.list.forEach(function(subHabilidade, subHabilidadeIndex) {
+				blocoHabilidade += '<div id="sub_' + subHabilidadeIndex + '"><h4 id="subskill_title">' + subHabilidade.subskill_title + '</h4>' +
+					'<div class="skill-container">' +
+					'<div class="skill-percentage skill-' + subHabilidade.percentage + '" id="percentage"></div>' +
+					'</div></div>';
+			});
+			blocoHabilidade += '</div> </div>';
+
+			$("#skills").append(blocoHabilidade).fadeIn('400');
+		} else {
+			console.log("Nem todas as informações sobre a educação " + habilidadeIndice + " foram passadas.");
+		}
+	} else {
+		$("#skills #" + habilidadeIndice + " #skill_title").fadeOut('400', function() {
+			$(this).text(habilidade.skill_title).fadeIn();
+		});
+
+		habilidade.list.forEach(function(subHabilidade, subHabilidadeIndex) {
+			$("#skills #" + habilidadeIndice + " #sub_" + subHabilidadeIndex + " #subskill_title").fadeOut('400', function() {
+				$(this).text(subHabilidade.subskill_title).fadeIn();
+			});
+
+			$("#skills #" + habilidadeIndice + " #sub_" + subHabilidadeIndex + " #percentage").parent().fadeOut('400', function() {
+				$(this).fadeIn();
+			});
+		});
+	}
+}
+
+function modificarTituloDownload(titulo){
+	$("#download_cv").parent().fadeOut('400', function() {
+		$("#download_cv").text(titulo);
+		$(this).fadeIn();
+	});
 }
 
 function informarErroDeCarregamentoDeJsonDeLinguagem() {

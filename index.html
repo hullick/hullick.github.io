@@ -60,9 +60,11 @@
 					<li>
 						<a class="pt-trigger" href="#resume" id="resume" data-animation="18"><i class="menu-icon pe-7s-icon pe-7s-id"></i><span></span></a>
 					</li>
+					<!--
 					<li>
 						<a class="pt-trigger" href="#portfolio" id="portfolio" data-animation="19"><i class="menu-icon pe-7s-icon pe-7s-portfolio"></i><span></span></a>
 					</li>
+					-->
 					<li>
 						<a class="pt-trigger" href="#contact" id="contact" data-animation="20"><i class="menu-icon pe-7s-icon pe-7s-mail"></i><span></span></a>
 					</li>
@@ -351,59 +353,16 @@
 								</div>
 								<div class="col-sm-6 col-md-4 subpage-block">
 									<div class="block-title">
-										<h3 id="experience_title">Experience</h3>
+										<h3 id="experience_title"></h3>
 									</div>
 									<div class="timeline" id="experience_timeline"></div>
 								</div>
-								<div class="col-sm-6 col-md-4 subpage-block">
-									<div class="block-title">
-										<h3>Design Skills</h3>
-									</div>
-									<div class="skills-info">
-										<h4>Web Design</h4>
-										<div class="skill-container">
-											<div class="skill-percentage skill-100"></div>
-										</div>
-										<h4>Graphic Design</h4>
-										<div class="skill-container">
-											<div class="skill-percentage skill-80"></div>
-										</div>
-										<h4>Print Design</h4>
-										<div class="skill-container">
-											<div class="skill-percentage skill-50"></div>
-										</div>
-									</div>
-									<div class="block-title">
-										<h3>Coding Skills</h3>
-									</div>
-									<div class="skills-info">
-										<h4>HML5</h4>
-										<div class="skill-container">
-											<div class="skill-percentage skill-4"></div>
-										</div>
-										<h4>CSS3</h4>
-										<div class="skill-container">
-											<div class="skill-percentage skill-5"></div>
-										</div>
-										<h4>jQuery</h4>
-										<div class="skill-container">
-											<div class="skill-percentage skill-6"></div>
-										</div>
-										<h4>Wordpress</h4>
-										<div class="skill-container">
-											<div class="skill-percentage skill-7"></div>
-										</div>
-										<h4>PHP</h4>
-										<div class="skill-container">
-											<div class="skill-percentage skill-8"></div>
-										</div>
-									</div>
-								</div>
+								<div class="col-sm-6 col-md-4 subpage-block" id="skills"></div>
 							</div>
 							<div class="row">
 								<div class="col-sm-12 col-md-12">
 									<div class="download-cv-block">
-										<a class="button" target="_blank" href="#">Download CV</a>
+										<a class="button" target="_blank" href="#" id="download_cv"></a>
 									</div>
 								</div>
 							</div>
@@ -411,6 +370,7 @@
 					</section>
 					<!-- End Resume Subpage -->
 					<!-- Portfolio Subpage -->
+					<!--
 					<section class="pt-page pt-page-4" data-id="portfolio">
 						<div class="border-block-top-110"></div>
 						<div class="section-inner">
@@ -420,9 +380,7 @@
 									<h5 class="section-description">My Best Works</h5>
 								</div>
 							</div>
-							<!-- Portfolio Content -->
 							<div class="portfolio-content">
-								<!-- Portfolio filter -->
 								<ul id="portfolio_filters" class="portfolio-filters">
 									<li class="active">
 										<a class="filter btn btn-sm btn-link active" data-group="all">All</a>
@@ -437,10 +395,7 @@
 										<a class="filter btn btn-sm btn-link" data-group="video">Video</a>
 									</li>
 								</ul>
-								<!-- End of Portfolio filter -->
-								<!-- Portfolio Grid -->
 								<div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
-									<!-- Portfolio Item 1 -->
 									<figure class="item" data-groups='["all", "media"]'>
 										<a class="ajax-page-load" href="portfolio-1.html">
 						<img src="images/portfolio/1.jpg" alt="">
@@ -451,8 +406,6 @@
 						</div>
 					  </a>
 									</figure>
-									<!-- /Portfolio Item 1 -->
-									<!-- Portfolio Item 2 -->
 									<figure class="item" data-groups='["all", "video"]'>
 										<a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Praesent Dolor Ex" class="lightbox mfp-iframe">
 						<img src="images/portfolio/2.jpg" alt="">
@@ -463,8 +416,6 @@
 						</div>
 					  </a>
 									</figure>
-									<!-- /Portfolio Item 2 -->
-									<!-- Portfolio Item 3 -->
 									<figure class="item" data-groups='["all","illustration"]'>
 										<a href="images/portfolio/full/3.jpg" class="lightbox" title="Duis Eu Eros Viverra">
 						<img src="images/portfolio/3.jpg" alt="">
@@ -475,8 +426,6 @@
 						</div>
 					  </a>
 									</figure>
-									<!-- /Portfolio Item 3 -->
-									<!-- Portfolio Item 4 -->
 									<figure class="item" data-groups='["all", "media"]'>
 										<a class="ajax-page-load" href="portfolio-2.html">
 						<img src="images/portfolio/4.jpg" alt="">
@@ -487,8 +436,6 @@
 						</div>
 					  </a>
 									</figure>
-									<!-- /Portfolio Item 4 -->
-									<!-- Portfolio Item 5 -->
 									<figure class="item" data-groups='["all", "illustration"]'>
 										<a href="images/portfolio/full/5.jpg" class="lightbox" title="Aliquam Condimentum Magna Rhoncus">
 						<img src="images/portfolio/5.jpg" alt="">
@@ -499,8 +446,6 @@
 						</div>
 					  </a>
 									</figure>
-									<!-- /Portfolio Item 5 -->
-									<!-- Portfolio Item 6 -->
 									<figure class="item" data-groups='["all", "media"]'>
 										<a class="ajax-page-load" href="portfolio-3.html">
 						<img src="images/portfolio/6.jpg" alt="">
@@ -511,8 +456,6 @@
 						</div>
 					  </a>
 									</figure>
-									<!-- /Portfolio Item 6 -->
-									<!-- Portfolio Item 7 -->
 									<figure class="item" data-groups='["all", "video"]'>
 										<a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Nulla Facilisi" class="lightbox mfp-iframe">
 						<img src="images/portfolio/7.jpg" alt="">
@@ -523,8 +466,6 @@
 						</div>
 					  </a>
 									</figure>
-									<!-- /Portfolio Item 7 -->
-									<!-- Portfolio Item 8 -->
 									<figure class="item" data-groups='["all",  "media"]'>
 										<a class="ajax-page-load" href="portfolio-4.html">
 						<img src="images/portfolio/8.jpg" alt="">
@@ -535,8 +476,6 @@
 						</div>
 					  </a>
 									</figure>
-									<!-- /Portfolio Item 8 -->
-									<!-- Portfolio Item 9 -->
 									<figure class="item" data-groups='["all","illustration"]'>
 										<a href="images/portfolio/full/9.jpg" class="lightbox" title="Mauris Neque Dolor">
 						<img src="images/portfolio/9.jpg" alt="">
@@ -547,8 +486,6 @@
 						</div>
 					  </a>
 									</figure>
-									<!-- /Portfolio Item 9 -->
-									<!-- Portfolio Item 10 -->
 									<figure class="item" data-groups='["all", "video"]'>
 										<a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Donec Lectus Arcu" class="lightbox mfp-iframe">
 						<img src="images/portfolio/10.jpg" alt="">
@@ -559,8 +496,6 @@
 						</div>
 					  </a>
 									</figure>
-									<!-- /Portfolio Item 10 -->
-									<!-- Portfolio Item 11 -->
 									<figure class="item" data-groups='["all","illustration"]'>
 										<a href="images/portfolio/full/11.jpg" class="lightbox" title="Duis Eu Eros Viverra">
 						<img src="images/portfolio/11.jpg" alt="">
@@ -571,8 +506,6 @@
 						</div>
 					  </a>
 									</figure>
-									<!-- /Portfolio Item 11 -->
-									<!-- Portfolio Item 12 -->
 									<figure class="item" data-groups='["all","media"]'>
 										<a class="ajax-page-load" href="portfolio-5.html">
 						<img src="images/portfolio/12.jpg" alt="">
@@ -583,14 +516,11 @@
 						</div>
 					  </a>
 									</figure>
-									<!-- /Portfolio Item 12 -->
 								</div>
-								<!-- /Portfolio Grid -->
 							</div>
-							<!-- /Portfolio Content -->
 						</div>
 					</section>
-					<!-- /Portfolio Subpage -->
+					-->
 					<!-- Contact Subpage -->
 					<section class="pt-page pt-page-5" data-id="contact">
 						<div class="border-block-top-110"></div>
