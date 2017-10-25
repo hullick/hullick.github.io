@@ -111,7 +111,7 @@ function modificarTextoIndiceCarrosselDeTextos(id, texto) {
 
 	} else {
 		$("#" + id + ".home-page-description").fadeOut('400', function() {
-			$("#" + id + ".home-page-description").text(texto).fadeIn();
+			$(this).text(texto).fadeIn();
 		});
 	}
 }
@@ -129,8 +129,8 @@ function modificarTextosSobre(id, texto) {
 		});
 	else {
 		$("#" + id).parent().fadeOut('400', function() {
-			$(this).text(texto)
-			$(this).parent().fadeIn();
+			$(this).children().text(texto)
+			$(this).fadeIn();
 		});
 	}
 }
@@ -255,7 +255,7 @@ function adicionarHabilidade(habilidade, habilidadeIndice) {
 
 			$("#skills").append(blocoHabilidade).fadeIn('400');
 		} else {
-			console.log("Nem todas as informações sobre a educação " + habilidadeIndice + " foram passadas.");
+			console.log("Nem todas as informações sobre a habilidade " + habilidadeIndice + " foram passadas.");
 		}
 	} else {
 		$("#skills #" + habilidadeIndice + " #skill_title").fadeOut('400', function() {
@@ -276,7 +276,7 @@ function adicionarHabilidade(habilidade, habilidadeIndice) {
 
 function modificarTituloDownload(titulo){
 	$("#download_cv").parent().fadeOut('400', function() {
-		$("#download_cv").text(titulo);
+		$(this).children().text(titulo);
 		$(this).fadeIn();
 	});
 }

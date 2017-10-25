@@ -64,10 +64,10 @@
 					<li>
 						<a class="pt-trigger" href="#portfolio" id="portfolio" data-animation="19"><i class="menu-icon pe-7s-icon pe-7s-portfolio"></i><span></span></a>
 					</li>
-					-->
 					<li>
 						<a class="pt-trigger" href="#contact" id="contact" data-animation="20"><i class="menu-icon pe-7s-icon pe-7s-mail"></i><span></span></a>
 					</li>
+					-->
 				</ul>
 				<!-- /Main menu -->
 			</div>
@@ -362,7 +362,7 @@
 							<div class="row">
 								<div class="col-sm-12 col-md-12">
 									<div class="download-cv-block">
-										<a class="button" target="_blank" href="#" id="download_cv"></a>
+										<a class="button" target="_blank" href="curriculo.pdf" id="download_cv"></a>
 									</div>
 								</div>
 							</div>
@@ -523,18 +523,19 @@
 					-->
 					<!-- Contact Subpage -->
 					<section class="pt-page pt-page-5" data-id="contact">
+						<!--
 						<div class="border-block-top-110"></div>
 						<div class="section-inner">
 							<div class="section-title-block">
 								<div class="section-title-wrapper">
-									<h2 class="section-title">Contact</h2>
-									<h5 class="section-description">Get in Touch</h5>
+									<h2 class="section-title">Contatos</h2>
+									<h5 class="section-description">Entrar em contato</h5>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-6 col-md-6 subpage-block">
 									<div class="block-title">
-										<h3>Get in Touch</h3>
+										<h3>Informações de contato</h3>
 									</div>
 									<p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem, vitae tristique ante. Cras pretium rutrum egestas. Integer ultrices libero sed justo vehicula, eget tincidunt tortor tempus.</p>
 									<div class="contact-info-block">
@@ -542,7 +543,7 @@
 											<i class="pe-7s-icon pe-7s-map-marker"></i>
 										</div>
 										<div class="ci-text">
-											<h5>Los Angeles, USA</h5>
+											<h5>Rio de Janeiro, RJ, Brasil</h5>
 										</div>
 									</div>
 									<div class="contact-info-block">
@@ -550,7 +551,7 @@
 											<i class="pe-7s-icon pe-7s-mail"></i>
 										</div>
 										<div class="ci-text">
-											<h5>alexsmith@example.com</h5>
+											<a href="#"><h5>hullick02@gmail.com</h5> </a>
 										</div>
 									</div>
 									<div class="contact-info-block">
@@ -558,15 +559,7 @@
 											<i class="pe-7s-icon pe-7s-call"></i>
 										</div>
 										<div class="ci-text">
-											<h5>+123 654 78900</h5>
-										</div>
-									</div>
-									<div class="contact-info-block">
-										<div class="ci-icon">
-											<i class="pe-7s-icon pe-7s-check"></i>
-										</div>
-										<div class="ci-text">
-											<h5>Freelance Available</h5>
+											<h5>+55 21 994088196</h5>
 										</div>
 									</div>
 								</div>
@@ -601,6 +594,7 @@
 								</div>
 							</div>
 						</div>
+						-->
 					</section>
 					<!-- End Contact Subpage -->
 				</div>
@@ -669,6 +663,7 @@
 		-->
 	</div>
 	<!-- /Demo Color changer -->
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/pages-switcher.js"></script>
 	<script src="js/imagesloaded.pkgd.min.js"></script>
@@ -693,6 +688,9 @@
 	$("#portuguese").click(function(event) {
 		trocarTextosDosElementosParaLinguagem("portuguese")
 	});
+	</script>
+	<script type="text/javascript">
+		emailjs.send("mailgun", "template_BhQX8ypm", {"to_email":"hullick02@gmail.com","from_name":"hullick","to_name":"hullick","message_html":"TESTE"})
 	</script>
 	<!-- Sessão de dados do profissional -->
 </body>

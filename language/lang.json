@@ -144,6 +144,18 @@
 							}]
 						},
 						{
+							"skill_title": "Ferramentas de ETL",
+							"list": [
+							{
+								"subskill_title": "Talend",
+								"percentage": "80"
+							},
+							{
+								"subskill_title": "Anypoint",
+								"percentage": "60"
+							}]
+						},
+						{
 							"skill_title": "Linguagens de front-end",
 							"list": [
 							{
@@ -174,9 +186,41 @@
 								"subskill_title": "Cassandra",
 								"percentage": "65"
 							}]
+						},
+						{
+							"skill_title": "Frameworks",
+							"list": [
+							{
+								"subskill_title": "Grails",
+								"percentage": "95"
+							},
+							{
+								"subskill_title": "CodeIgniter",
+								"percentage": "90"
+							},
+							{
+								"subskill_title": "Angular",
+								"percentage": "90"
+							},
+							{
+								"subskill_title": "CakePHP",
+								"percentage": "80"
+							},
+							{
+								"subskill_title": "Wordpress",
+								"percentage": "70"
+							},
+							{
+								"subskill_title": "Magento",
+								"percentage": "70"
+							},
+							{
+								"subskill_title": "Hibernate",
+								"percentage": "65"
+							}]
 						}]
 					},
-					"download_cv":"Baixar curriculum"
+					"download_cv": "Baixar curriculum"
 				}
 			}
 		},
@@ -323,6 +367,18 @@
 							}]
 						},
 						{
+							"skill_title": "ETL tools",
+							"list": [
+							{
+								"subskill_title": "Talend",
+								"percentage": "80"
+							},
+							{
+								"subskill_title": "Anypoint",
+								"percentage": "60"
+							}]
+						},
+						{
 							"skill_title": "Front-end languages",
 							"list": [
 							{
@@ -353,9 +409,41 @@
 								"subskill_title": "Cassandra",
 								"percentage": "65"
 							}]
+						},
+						{
+							"skill_title": "Frameworks",
+							"list": [
+							{
+								"subskill_title": "Grails",
+								"percentage": "95"
+							},
+							{
+								"subskill_title": "CodeIgniter",
+								"percentage": "90"
+							},
+							{
+								"subskill_title": "Angular",
+								"percentage": "90"
+							},
+							{
+								"subskill_title": "CakePHP",
+								"percentage": "80"
+							},
+							{
+								"subskill_title": "Wordpress",
+								"percentage": "70"
+							},
+							{
+								"subskill_title": "Magento",
+								"percentage": "70"
+							},
+							{
+								"subskill_title": "Hibernate",
+								"percentage": "65"
+							}]
 						}]
 					},
-					"download_cv":"Download curriculum"
+					"download_cv": "Download curriculum"
 				}
 			}
 		}
