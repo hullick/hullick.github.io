@@ -1,458 +1,463 @@
 {
-	"terms":
-	{
-		"portuguese":
-		{
-			"blocks":
-			{
-				"configuration":
-				{
-					"configurations": "Configurações",
-					"language": "Linguagem"
-				},
-				"text_carousel":
-				{
-					"back_end_developer": "Desenvolvedor back-end",
-					"database_developer": "Implementador de banco de dados",
-					"agile_methodologies_enthusiastic": "Entusiasta de metodologias ágeis",
-					"linux_based_os_fan": "Fã de sistemas operacionais baseados em linux"
-				},
-				"menu":
-				{
-					"home": "Início",
-					"about": "Sobre",
-					"resume": "Currículo",
-					"portfolio": "Portifólio",
-					"contact": "Contato"
-				},
-				"about":
-				{
-					"title": "Sobre o Hullick",
-					"description": "Implementador, Arquiteto de software, Solucionador",
-					"subpage":
-					{
-						"title": "Um implementador de softwares",
-						"text_1": "Apresento a vocês um profissional versátil, capaz de ajudar a sua empresa a expandir suas possibilidades de atuação e de lucros com a implementação de tecnologias da informação.",
-						"text_2": "Com o passar dos anos, consolidou-se na área de desenvolvimento, capacitando-se em linguagens de programação, frameworks e ferramentas, porém, por sempre almejar mais conhecimentos, adaptou-se as áreas relacionadas a virtualização de servidores e infra-estrutura de redes."
-					},
-					"info":
-					{
-						"age": "Idade",
-						"age_value_text": " anos",
-						"nationality": "Nacionalidade",
-						"nationality_value": "Brasileiro",
-						"address": "Endereço",
-						"address_value": "Rio de Janeiro, RJ, Penha",
-						"email": "E-mail",
-						"email_value": "hullick02@gmail.com",
-						"phone": "Telefone",
-						"phone_value": "+55021994088196",
-						"phone_value_formated": "+55 (021) 99408-8196",
-						"skype": "Skype",
-						"skype_value": "hullick02",
-						"freelance": "Freelance",
-						"freelance_value": "Disponível"
-					},
-					"proficiencies":
-					{
-						"title": "Proeficiências",
-						"web_development": "Desenvolvimento web",
-						"web_development_text": "Conhecimentos da suíte atual de desenvolvimento, necessária para o rápido e eficaz desenvolvimento de aplicações para web.",
-						"back_end_language": "Linguagens de background",
-						"back_end_language_text": "Implementações nas principais linguagens e ferramentas para desenvolvimento de sistemas, bem como integrações com outros.",
-						"server_virtualization": "Virtualização de servidores",
-						"server_virtualization_text": "Conhecimentos em virtualização de servidores, que sejam em arquiteturas completas, ou orientadas a microserviços..",
-						"mobile": "Plataformas móveis",
-						"mobile_text": "Capacidade de desenvolver para as plataformas móveis atuantes no mercado, implementado de formas híbridas ou de formas nativas."
-					},
-					"interesting_facts":
-					{
-						"title": "Fatos interessantes",
-						"web_development": "Desenvolvimento web",
-						"working_hours": "Horas trabalhadas",
-						"finished_projects": "Projetos finalizados",
-						"coffee_consumed": "Copos de café consumidos"
-					}
-				},
-				"resume":
-				{
-					"title": "Currículo",
-					"experience_time": "2 anos desenvolvendo",
-					"education":
-					{
-						"title": "Educação",
-						"list": [
-						{
-							"year": "2014 - 2018",
-							"course_name": "Graduação em ciência da computação",
-							"institute": "Infnet",
-							"description": "Formação com utilização de técnicas para desenvolvimento de aplicações comerciais e científicas, dando ênfase à integração entre diferentes áreas e em atividades práticas das áreas estudadas."
-						},
-						{
-							"year": "2013 - 2014",
-							"course_name": "Especialização em linguagem java",
-							"institute": "Infnet",
-							"description": "Curso com demonstrações práticas sobre o dia-a-dia dos profissionais da área, cobrindo desde as áreas iniciais de projetos - modelagem de sistemas - até suas implementações, sejam em linguagens de programação ou de banco de dados."
-						},
-						{
-							"year": "2012 - 2013",
-							"course_name": "Técnico em informática",
-							"institute": "Senac Rio - Copacabana",
-							"description": "Curso com abordagem técnica sobre montagem e manutenção de microcomputadores, introdução a implementação de banco de dados, linguagens e ferramentas voltadas para a web e gerenciamento e modelagem de projetos."
-						}]
-					},
-					"experience":
-					{
-						"title": "Experiência",
-						"list": [
-						{
-							"experience_range_time": "Out 2016 - Atual",
-							"job_title": "Técnico em programação",
-							"company": "Celeritech Brasil",
-							"description": "Desenvolvi atividades de implementação de páginas web utilizando framework Grails, baseado em linguagem groovy, bem como o desenvolvimento de processos de ETL, Extraction, Transformation and Load - Extração, Transformação e Carga, para população de dados em banco de dados Oracle. Também realizei atividades de implementação e documentação de projetos para plataforma móvel Android"
-						},
-						{
-							"experience_range_time": "Abr 2016 - Out 2016",
-							"job_title": "Implementador de ecommerce",
-							"company": "Intercase",
-							"description": "Realizei atividades implementando e corrigindo sistemas de ecommerce baseados na plataforma Magento, incluindo recursos de front-end, como HTML, CSS, JavaScript e JQuery, back-end, sobre linguagem PHP, e banco de dados, sobre o Sistema Gerenciador de Banco de Dados MySQL."
-						},
-						{
-							"experience_range_time": "Abr 2015 - Abr 2016",
-							"job_title": "Desenvolvedor web e móvel híbrido",
-							"company": "BC Agência",
-							"description": "Realizei atividades implementando e corrigindo páginas web, utilizando linguagens HTML, CSS, JavaScript e PHP, frameworks JQuery e CodeIgniter, bancos de dados MySQL e documentando projetos utilizando notações UML. Sobre ambiente híbrido móvel, desenvolvemos utilizando linguagens comuns à web, como HTML, CSS e JavaScript e integração com servidores através de requisições Ajax."
-						}]
-					},
-					"skills":
-					{
-						"list": [
-						{
-							"skill_title": "Linguagens de back-end",
-							"list": [
-							{
-								"subskill_title": "PHP",
-								"percentage": "90"
-							},
-							{
-								"subskill_title": "Java",
-								"percentage": "85"
-							},
-							{
-								"subskill_title": "Groovy",
-								"percentage": "85"
-							}]
-						},
-						{
-							"skill_title": "Ferramentas de ETL",
-							"list": [
-							{
-								"subskill_title": "Talend",
-								"percentage": "80"
-							},
-							{
-								"subskill_title": "Anypoint",
-								"percentage": "60"
-							}]
-						},
-						{
-							"skill_title": "Linguagens de front-end",
-							"list": [
-							{
-								"subskill_title": "JavaScript",
-								"percentage": "85"
-							},
-							{
-								"subskill_title": "HTML",
-								"percentage": "70"
-							},
-							{
-								"subskill_title": "CSS",
-								"percentage": "50"
-							}]
-						},
-						{
-							"skill_title": "Banco de dados",
-							"list": [
-							{
-								"subskill_title": "MySQL",
-								"percentage": "95"
-							},
-							{
-								"subskill_title": "Oracle",
-								"percentage": "70"
-							},
-							{
-								"subskill_title": "Cassandra",
-								"percentage": "65"
-							}]
-						},
-						{
-							"skill_title": "Frameworks",
-							"list": [
-							{
-								"subskill_title": "Grails",
-								"percentage": "95"
-							},
-							{
-								"subskill_title": "CodeIgniter",
-								"percentage": "90"
-							},
-							{
-								"subskill_title": "Angular",
-								"percentage": "90"
-							},
-							{
-								"subskill_title": "CakePHP",
-								"percentage": "80"
-							},
-							{
-								"subskill_title": "Wordpress",
-								"percentage": "70"
-							},
-							{
-								"subskill_title": "Magento",
-								"percentage": "70"
-							},
-							{
-								"subskill_title": "Hibernate",
-								"percentage": "65"
-							}]
-						}]
-					},
-					"download_cv": "Baixar curriculum"
-				}
-			}
-		},
-		"english":
-		{
-			"blocks":
-			{
-				"configuration":
-				{
-					"configurations": "Configurations",
-					"language": "Language"
-				},
-				"text_carousel":
-				{
-					"back_end_developer": "Back-end developer",
-					"database_developer": "Database developer",
-					"agile_methodologies_enthusiastic": "Agile methodologies enthusiastic",
-					"linux_based_os_fan": "Linux based operational systems fan"
-				},
-				"menu":
-				{
-					"home": "Home",
-					"about": "About",
-					"resume": "Resume",
-					"portfolio": "Portfolio",
-					"contact": "Contact"
-				},
-				"about":
-				{
-					"title": "About Hullick",
-					"description": "Developer, Software architect, Solver",
-					"subpage":
-					{
-						"title": "A software developer",
-						"text_1": "I introduce you a versatile professional, able to help your business to expand its profits and operational possibilities with the integration of information technologies.",
-						"text_2": "Over the years, consolidated in development area, training in programming languages, frameworks and tools, however, for always aiming more knowledge, it has adapted to areas related to server virtualization and network infraestructure."
-					},
-					"info":
-					{
-						"age": "Age",
-						"age_value_text": " years old",
-						"nationality": "Nationality",
-						"nationality_value": "Brasilian",
-						"address": "Address",
-						"address_value": "Rio de Janeiro, RJ, Penha",
-						"email": "E-mail",
-						"email_value": "hullick02@gmail.com",
-						"phone": "Phone",
-						"phone_value": "+55021994088196",
-						"phone_value_formated": "+55 (021) 99408-8196",
-						"skype": "Skype",
-						"skype_value": "hullick02",
-						"freelance": "Freelance",
-						"freelance_value": "Avaliable"
-					},
-					"proficiencies":
-					{
-						"title": "Proficiencies",
-						"web_development": "Web development",
-						"web_development_text": "Knowledge in the current development suite, required for fast and effective web application development.",
-						"back_end_language": "Back-end languages",
-						"back_end_language_text": "Development in the main languages ​​and tools for systems development, as well as integrations with anothers.",
-						"server_virtualization": "Server virtualization",
-						"server_virtualization_text": "Knowledge in virtualization of servers, that are in complete architectures, microservices' oriented.",
-						"mobile": "Mobile",
-						"mobile_text": "Ability to develop for mobile platforms operating in the market, implemented in hybrid or native forms."
-					},
-					"interesting_facts":
-					{
-						"title": "Interesting facts",
-						"web_development": "Web development",
-						"working_hours": "Working hours",
-						"finished_projects": "Finished projects",
-						"coffee_consumed": "Cups of cofee consumed"
-					}
-				},
-				"resume":
-				{
-					"title": "Resume",
-					"experience_time": "2 years development",
-					"education":
-					{
-						"title": "Education",
-						"list": [
-						{
-							"year": "2014 - 2018",
-							"course_name": "Undergraduate in computer science",
-							"institute": "Infnet",
-							"description": "Graduation with the use of techniques for the development of commercial and scientific applications, emphasizing the integration between different areas and in practical activities of the studied areas."
-						},
-						{
-							"year": "2014",
-							"course_name": "Specialization in java language",
-							"institute": "Infnet",
-							"description": "Course with practical demonstrations about the day-to-day of the professionals, covering from the initial areas of projects - modeling of systems - to their implementations, whether in programming languages ​​or database."
-						},
-						{
-							"year": "2013",
-							"course_name": "Computer Technician",
-							"institute": "Senac Rio - Copacabana",
-							"description": "Course with technical approach on assembly and maintenance of microcomputers, introduction of database development, tools and languages directed to web development and management and modeling of projects."
-						}]
-					},
-					"experience":
-					{
-						"title": "Experience",
-						"list": [
-						{
-							"experience_range_time": "Oct 2016 - Atual",
-							"job_title": "Technician programmer",
-							"company": "Celeritech Brasil",
-							"description": "I accomplished activities of web pages development using the Grails framework, based in Groovy language, as well the development of ETL jobs , Extraction, Transformation and Load, populating the resulting data in Oracle databases. I also performed development and documentation activities in projects for Android platform"
-						},
-						{
-							"experience_range_time": "Apr 2016 - Oct 2016",
-							"job_title": "Ecommerce developer",
-							"company": "Intercase",
-							"description": "I accomplished acivities developing and fixing ecommerce systems based in Magento platform, including front-end, such as HTML, CSS, JavaScript and JQuery, back-end, using PHP language, and databases, using the Database Management System MySQL, resources"
-						},
-						{
-							"experience_range_time": "Apr 2015 - Apr 2016",
-							"job_title": "Web and Hybrid mobile developer",
-							"company": "BC Agência",
-							"description": "I realized activities developing and fixing web pages, using HTML, CSS, JavaScript and PHP languages, JQuery and CodeIgniter frameworks, MySQL databases and documenting projects using UML notations. About hybrid mobile environment, I developed using common langugages to web, such as HTML, CSS and JavaScript, and integrating with servers through ajax requests."
-						}]
-					},
-					"skills":
-					{
-						"list": [
-						{
-							"skill_title": "Back-end languages",
-							"list": [
-							{
-								"subskill_title": "PHP",
-								"percentage": "90"
-							},
-							{
-								"subskill_title": "Java",
-								"percentage": "85"
-							},
-							{
-								"subskill_title": "Groovy",
-								"percentage": "85"
-							}]
-						},
-						{
-							"skill_title": "ETL tools",
-							"list": [
-							{
-								"subskill_title": "Talend",
-								"percentage": "80"
-							},
-							{
-								"subskill_title": "Anypoint",
-								"percentage": "60"
-							}]
-						},
-						{
-							"skill_title": "Front-end languages",
-							"list": [
-							{
-								"subskill_title": "JavaScript",
-								"percentage": "85"
-							},
-							{
-								"subskill_title": "HTML",
-								"percentage": "70"
-							},
-							{
-								"subskill_title": "CSS",
-								"percentage": "50"
-							}]
-						},
-						{
-							"skill_title": "Databases",
-							"list": [
-							{
-								"subskill_title": "MySQL",
-								"percentage": "95"
-							},
-							{
-								"subskill_title": "Oracle",
-								"percentage": "70"
-							},
-							{
-								"subskill_title": "Cassandra",
-								"percentage": "65"
-							}]
-						},
-						{
-							"skill_title": "Frameworks",
-							"list": [
-							{
-								"subskill_title": "Grails",
-								"percentage": "95"
-							},
-							{
-								"subskill_title": "CodeIgniter",
-								"percentage": "90"
-							},
-							{
-								"subskill_title": "Angular",
-								"percentage": "90"
-							},
-							{
-								"subskill_title": "CakePHP",
-								"percentage": "80"
-							},
-							{
-								"subskill_title": "Wordpress",
-								"percentage": "70"
-							},
-							{
-								"subskill_title": "Magento",
-								"percentage": "70"
-							},
-							{
-								"subskill_title": "Hibernate",
-								"percentage": "65"
-							}]
-						}]
-					},
-					"download_cv": "Download curriculum"
-				}
-			}
-		}
-	},
-	"config":
-	{
-		"default_language": "portuguese",
-		"languages": [
-			"portuguese", "english"
-		]
-	}
+  "terms": {
+    "portuguese": {
+      "blocks": {
+        "configuration": {
+          "configurations": "Configurações",
+          "language": "Linguagem"
+        },
+        "text_carousel": {
+          "back_end_developer": "Desenvolvedor back-end",
+          "database_developer": "Implementador de banco de dados",
+          "agile_methodologies_enthusiastic": "Entusiasta de metodologias ágeis",
+          "linux_based_os_fan": "Fã de sistemas operacionais baseados em linux"
+        },
+        "menu": {
+          "home": "Início",
+          "about": "Sobre",
+          "resume": "Currículo",
+          "portfolio": "Portifólio",
+          "contact": "Contato"
+        },
+        "about": {
+          "title": "Sobre o Hullick",
+          "description": "Implementador, Arquiteto de software, Solucionador",
+          "subpage": {
+            "title": "Um implementador de softwares",
+            "text_1": "Apresento a vocês um profissional versátil, capaz de ajudar a sua empresa a expandir suas possibilidades de atuação e de lucros com a implementação de tecnologias da informação.",
+            "text_2": "Com o passar dos anos, consolidou-se na área de desenvolvimento, capacitando-se em linguagens de programação, frameworks e ferramentas, porém, por sempre almejar mais conhecimentos, adaptou-se as áreas relacionadas a virtualização de servidores e infra-estrutura de redes."
+          },
+          "info": {
+            "age": "Idade",
+            "age_value_text": " anos",
+            "nationality": "Nacionalidade",
+            "nationality_value": "Brasileiro",
+            "address": "Endereço",
+            "address_value": "Rio de Janeiro, RJ, Penha",
+            "email": "E-mail",
+            "email_value": "hullick02@gmail.com",
+            "phone": "Telefone",
+            "phone_value": "+55021994088196",
+            "phone_value_formated": "+55 (021) 99408-8196",
+            "skype": "Skype",
+            "skype_value": "hullick02",
+            "freelance": "Freelance",
+            "freelance_value": "Disponível"
+          },
+          "proficiencies": {
+            "title": "Proeficiências",
+            "web_development": "Desenvolvimento web",
+            "web_development_text": "Conhecimentos da suíte atual de desenvolvimento, necessária para o rápido e eficaz desenvolvimento de aplicações para web.",
+            "back_end_language": "Linguagens de background",
+            "back_end_language_text": "Implementações nas principais linguagens e ferramentas para desenvolvimento de sistemas, bem como integrações com outros.",
+            "server_virtualization": "Virtualização de servidores",
+            "server_virtualization_text": "Conhecimentos em virtualização de servidores, que sejam em arquiteturas completas, ou orientadas a microserviços..",
+            "mobile": "Plataformas móveis",
+            "mobile_text": "Capacidade de desenvolver para as plataformas móveis atuantes no mercado, implementado de formas híbridas ou de formas nativas."
+          },
+          "interesting_facts": {
+            "title": "Fatos interessantes",
+            "web_development": "Desenvolvimento web",
+            "working_hours": "Horas trabalhadas",
+            "finished_projects": "Projetos finalizados",
+            "coffee_consumed": "Copos de café consumidos"
+          }
+        },
+        "resume": {
+          "title": "Currículo",
+          "experience_time": "2 anos desenvolvendo",
+          "education": {
+            "title": "Educação",
+            "list": [
+              {
+                "year": "2014 - 2018",
+                "course_name": "Graduação em ciência da computação",
+                "institute": "Infnet",
+                "description": "Formação com utilização de técnicas para desenvolvimento de aplicações comerciais e científicas, dando ênfase à integração entre diferentes áreas e em atividades práticas das áreas estudadas."
+              },
+              {
+                "year": "2013 - 2014",
+                "course_name": "Especialização em linguagem java",
+                "institute": "Infnet",
+                "description": "Curso com demonstrações práticas sobre o dia-a-dia dos profissionais da área, cobrindo desde as áreas iniciais de projetos - modelagem de sistemas - até suas implementações, sejam em linguagens de programação ou de banco de dados."
+              },
+              {
+                "year": "2012 - 2013",
+                "course_name": "Técnico em informática",
+                "institute": "Senac Rio - Copacabana",
+                "description": "Curso com abordagem técnica sobre montagem e manutenção de microcomputadores, introdução a implementação de banco de dados, linguagens e ferramentas voltadas para a web e gerenciamento e modelagem de projetos."
+              }
+            ]
+          },
+          "experience": {
+            "title": "Experiência",
+            "list": [
+              {
+                "experience_range_time": "Out 2016 - Atual",
+                "job_title": "Técnico em programação",
+                "company": "Celeritech Brasil",
+                "description": "Desenvolvi atividades de implementação de páginas web utilizando framework Grails, baseado em linguagem groovy, bem como o desenvolvimento de processos de ETL, Extraction, Transformation and Load - Extração, Transformação e Carga, para população de dados em banco de dados Oracle. Também realizei atividades de implementação e documentação de projetos para plataforma móvel Android"
+              },
+              {
+                "experience_range_time": "Abr 2016 - Out 2016",
+                "job_title": "Implementador de ecommerce",
+                "company": "Intercase",
+                "description": "Realizei atividades implementando e corrigindo sistemas de ecommerce baseados na plataforma Magento, incluindo recursos de front-end, como HTML, CSS, JavaScript e JQuery, back-end, sobre linguagem PHP, e banco de dados, sobre o Sistema Gerenciador de Banco de Dados MySQL."
+              },
+              {
+                "experience_range_time": "Abr 2015 - Abr 2016",
+                "job_title": "Desenvolvedor web e móvel híbrido",
+                "company": "BC Agência",
+                "description": "Realizei atividades implementando e corrigindo páginas web, utilizando linguagens HTML, CSS, JavaScript e PHP, frameworks JQuery e CodeIgniter, bancos de dados MySQL e documentando projetos utilizando notações UML. Sobre ambiente híbrido móvel, desenvolvemos utilizando linguagens comuns à web, como HTML, CSS e JavaScript e integração com servidores através de requisições Ajax."
+              }
+            ]
+          },
+          "skills": {
+            "list": [
+              {
+                "skill_title": "Linguagens de back-end",
+                "list": [
+                  {
+                    "subskill_title": "PHP",
+                    "percentage": "90"
+                  },
+                  {
+                    "subskill_title": "Java",
+                    "percentage": "85"
+                  },
+                  {
+                    "subskill_title": "Groovy",
+                    "percentage": "85"
+                  }
+                ]
+              },
+              {
+                "skill_title": "Ferramentas de ETL",
+                "list": [
+                  {
+                    "subskill_title": "Talend",
+                    "percentage": "80"
+                  },
+                  {
+                    "subskill_title": "Anypoint",
+                    "percentage": "60"
+                  }
+                ]
+              },
+              {
+                "skill_title": "Linguagens de front-end",
+                "list": [
+                  {
+                    "subskill_title": "JavaScript",
+                    "percentage": "85"
+                  },
+                  {
+                    "subskill_title": "HTML",
+                    "percentage": "70"
+                  },
+                  {
+                    "subskill_title": "CSS",
+                    "percentage": "50"
+                  }
+                ]
+              },
+              {
+                "skill_title": "Banco de dados",
+                "list": [
+                  {
+                    "subskill_title": "MySQL",
+                    "percentage": "95"
+                  },
+                  {
+                    "subskill_title": "Oracle",
+                    "percentage": "70"
+                  },
+                  {
+                    "subskill_title": "Cassandra",
+                    "percentage": "65"
+                  }
+                ]
+              },
+              {
+                "skill_title": "Frameworks",
+                "list": [
+                  {
+                    "subskill_title": "Grails",
+                    "percentage": "95"
+                  },
+                  {
+                    "subskill_title": "CodeIgniter",
+                    "percentage": "90"
+                  },
+                  {
+                    "subskill_title": "Angular",
+                    "percentage": "90"
+                  },
+                  {
+                    "subskill_title": "CakePHP",
+                    "percentage": "80"
+                  },
+                  {
+                    "subskill_title": "Wordpress",
+                    "percentage": "70"
+                  },
+                  {
+                    "subskill_title": "Magento",
+                    "percentage": "70"
+                  },
+                  {
+                    "subskill_title": "Hibernate",
+                    "percentage": "65"
+                  }
+                ]
+              },
+              {
+                "skill_title": "Ferrametas de integração contínua (CI)",
+                "list": [
+                  {
+                    "subskill_title": "Jenkins",
+                    "percentage": "70"
+                  }
+                ]
+              }
+            ]
+          },
+          "download_cv": "Baixar curriculum"
+        }
+      }
+    },
+    "english": {
+      "blocks": {
+        "configuration": {
+          "configurations": "Configurations",
+          "language": "Language"
+        },
+        "text_carousel": {
+          "back_end_developer": "Back-end developer",
+          "database_developer": "Database developer",
+          "agile_methodologies_enthusiastic": "Agile methodologies enthusiastic",
+          "linux_based_os_fan": "Linux based operational systems fan"
+        },
+        "menu": {
+          "home": "Home",
+          "about": "About",
+          "resume": "Resume",
+          "portfolio": "Portfolio",
+          "contact": "Contact"
+        },
+        "about": {
+          "title": "About Hullick",
+          "description": "Developer, Software architect, Solver",
+          "subpage": {
+            "title": "A software developer",
+            "text_1": "I introduce you a versatile professional, able to help your business to expand its profits and operational possibilities with the integration of information technologies.",
+            "text_2": "Over the years, consolidated in development area, training in programming languages, frameworks and tools, however, for always aiming more knowledge, it has adapted to areas related to server virtualization and network infraestructure."
+          },
+          "info": {
+            "age": "Age",
+            "age_value_text": " years old",
+            "nationality": "Nationality",
+            "nationality_value": "Brasilian",
+            "address": "Address",
+            "address_value": "Rio de Janeiro, RJ, Penha",
+            "email": "E-mail",
+            "email_value": "hullick02@gmail.com",
+            "phone": "Phone",
+            "phone_value": "+55021994088196",
+            "phone_value_formated": "+55 (021) 99408-8196",
+            "skype": "Skype",
+            "skype_value": "hullick02",
+            "freelance": "Freelance",
+            "freelance_value": "Avaliable"
+          },
+          "proficiencies": {
+            "title": "Proficiencies",
+            "web_development": "Web development",
+            "web_development_text": "Knowledge in the current development suite, required for fast and effective web application development.",
+            "back_end_language": "Back-end languages",
+            "back_end_language_text": "Development in the main languages ​​and tools for systems development, as well as integrations with anothers.",
+            "server_virtualization": "Server virtualization",
+            "server_virtualization_text": "Knowledge in virtualization of servers, that are in complete architectures, microservices' oriented.",
+            "mobile": "Mobile",
+            "mobile_text": "Ability to develop for mobile platforms operating in the market, implemented in hybrid or native forms."
+          },
+          "interesting_facts": {
+            "title": "Interesting facts",
+            "web_development": "Web development",
+            "working_hours": "Working hours",
+            "finished_projects": "Finished projects",
+            "coffee_consumed": "Cups of cofee consumed"
+          }
+        },
+        "resume": {
+          "title": "Resume",
+          "experience_time": "2 years development",
+          "education": {
+            "title": "Education",
+            "list": [
+              {
+                "year": "2014 - 2018",
+                "course_name": "Undergraduate in computer science",
+                "institute": "Infnet",
+                "description": "Graduation with the use of techniques for the development of commercial and scientific applications, emphasizing the integration between different areas and in practical activities of the studied areas."
+              },
+              {
+                "year": "2014",
+                "course_name": "Specialization in java language",
+                "institute": "Infnet",
+                "description": "Course with practical demonstrations about the day-to-day of the professionals, covering from the initial areas of projects - modeling of systems - to their implementations, whether in programming languages ​​or database."
+              },
+              {
+                "year": "2013",
+                "course_name": "Computer Technician",
+                "institute": "Senac Rio - Copacabana",
+                "description": "Course with technical approach on assembly and maintenance of microcomputers, introduction of database development, tools and languages directed to web development and management and modeling of projects."
+              }
+            ]
+          },
+          "experience": {
+            "title": "Experience",
+            "list": [
+              {
+                "experience_range_time": "Oct 2016 - Atual",
+                "job_title": "Technician programmer",
+                "company": "Celeritech Brasil",
+                "description": "I accomplished activities of web pages development using the Grails framework, based in Groovy language, as well the development of ETL jobs , Extraction, Transformation and Load, populating the resulting data in Oracle databases. I also performed development and documentation activities in projects for Android platform"
+              },
+              {
+                "experience_range_time": "Apr 2016 - Oct 2016",
+                "job_title": "Ecommerce developer",
+                "company": "Intercase",
+                "description": "I accomplished acivities developing and fixing ecommerce systems based in Magento platform, including front-end, such as HTML, CSS, JavaScript and JQuery, back-end, using PHP language, and databases, using the Database Management System MySQL, resources"
+              },
+              {
+                "experience_range_time": "Apr 2015 - Apr 2016",
+                "job_title": "Web and Hybrid mobile developer",
+                "company": "BC Agência",
+                "description": "I realized activities developing and fixing web pages, using HTML, CSS, JavaScript and PHP languages, JQuery and CodeIgniter frameworks, MySQL databases and documenting projects using UML notations. About hybrid mobile environment, I developed using common langugages to web, such as HTML, CSS and JavaScript, and integrating with servers through ajax requests."
+              }
+            ]
+          },
+          "skills": {
+            "list": [
+              {
+                "skill_title": "Back-end languages",
+                "list": [
+                  {
+                    "subskill_title": "PHP",
+                    "percentage": "90"
+                  },
+                  {
+                    "subskill_title": "Java",
+                    "percentage": "85"
+                  },
+                  {
+                    "subskill_title": "Groovy",
+                    "percentage": "85"
+                  }
+                ]
+              },
+              {
+                "skill_title": "ETL tools",
+                "list": [
+                  {
+                    "subskill_title": "Talend",
+                    "percentage": "80"
+                  },
+                  {
+                    "subskill_title": "Anypoint",
+                    "percentage": "60"
+                  }
+                ]
+              },
+              {
+                "skill_title": "Front-end languages",
+                "list": [
+                  {
+                    "subskill_title": "JavaScript",
+                    "percentage": "85"
+                  },
+                  {
+                    "subskill_title": "HTML",
+                    "percentage": "70"
+                  },
+                  {
+                    "subskill_title": "CSS",
+                    "percentage": "50"
+                  }
+                ]
+              },
+              {
+                "skill_title": "Databases",
+                "list": [
+                  {
+                    "subskill_title": "MySQL",
+                    "percentage": "95"
+                  },
+                  {
+                    "subskill_title": "Oracle",
+                    "percentage": "70"
+                  },
+                  {
+                    "subskill_title": "Cassandra",
+                    "percentage": "65"
+                  }
+                ]
+              },
+              {
+                "skill_title": "Frameworks",
+                "list": [
+                  {
+                    "subskill_title": "Grails",
+                    "percentage": "95"
+                  },
+                  {
+                    "subskill_title": "CodeIgniter",
+                    "percentage": "90"
+                  },
+                  {
+                    "subskill_title": "Angular",
+                    "percentage": "90"
+                  },
+                  {
+                    "subskill_title": "CakePHP",
+                    "percentage": "80"
+                  },
+                  {
+                    "subskill_title": "Wordpress",
+                    "percentage": "70"
+                  },
+                  {
+                    "subskill_title": "Magento",
+                    "percentage": "70"
+                  },
+                  {
+                    "subskill_title": "Hibernate",
+                    "percentage": "65"
+                  }
+                ]
+              },
+              {
+                "skill_title": "Continuous Integration tools (CI)",
+                "list": [
+                  {
+                    "subskill_title": "Jenkins",
+                    "percentage": "70"
+                  }
+                ]
+              }
+            ]
+          },
+          "download_cv": "Download curriculum"
+        }
+      }
+    }
+  },
+  "config": {
+    "default_language": "portuguese",
+    "languages": [
+      "portuguese",
+      "english"
+    ]
+  }
 }
