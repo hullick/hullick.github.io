@@ -135,12 +135,12 @@
                 "skill_title": "Ferramentas de ETL",
                 "list": [
                   {
-                    "subskill_title": "Talend",
+                    "subskill_title": "Anypoint",
                     "percentage": "80"
                   },
                   {
-                    "subskill_title": "Anypoint",
-                    "percentage": "60"
+                    "subskill_title": "Talend",
+                    "percentage": "70"
                   }
                 ]
               },
@@ -361,12 +361,12 @@
                 "skill_title": "ETL tools",
                 "list": [
                   {
-                    "subskill_title": "Talend",
+                    "subskill_title": "Anypoint",
                     "percentage": "80"
                   },
                   {
-                    "subskill_title": "Anypoint",
-                    "percentage": "60"
+                    "subskill_title": "Talend",
+                    "percentage": "70"
                   }
                 ]
               },
