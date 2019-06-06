@@ -1,2 +1,14 @@
 {
+  "home": "Início",
+  "about": "Sobre mim",
+  "qualifications": "Qualificações",
+  "portfolio": "Portifólio",
+  "knowledges": "Conhecimentos",
+  "social-networks": "Redes sociais",
+  "contacts": "Contatos",
+  "newsletter": "Receba minhas novidades",
+  "newsletter-input": {
+    "placeholder": "joao.couves@google.com"
+  },
+  "newsletter-subscribe": "Assinar"
 }

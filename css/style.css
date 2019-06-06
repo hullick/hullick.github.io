@@ -88,6 +88,13 @@ header .logo {
   display: inline-block;
 }
 
+header .logo h4{
+  color: white;
+  font-weight: bolder;
+  font-family: 'Great Vibes', cursive;
+  font-size: 27px;
+}
+
 header #header-info-bar {
   width: 25% !important;
   left: 75% !important;

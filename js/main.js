@@ -249,25 +249,6 @@
                 navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"]
             });
 
-
-            /*
-             * -----------------------------------------------------------------
-             *-----------------------------Typed Js-----------------------------
-             * -----------------------------------------------------------------
-             */
-
-            if ($(".welcome-area").is(".animated-text")) {
-                var typed = new Typed("#typed", {
-                    stringsElement: '#typed-strings',
-                    typeSpeed: 60,
-                    backSpeed: 30,
-                    backDelay: 2000,
-                    startDelay: 1000,
-                    loop: true
-
-                });
-            }
-
         }
         /*
          * -----------------------------------------------------------------
@@ -386,10 +367,45 @@
             })
         }
 
-    });
+        var typedJsApplied = false;
 
-    $("[data-translate]").jqTranslate(['header'],{
-        path: "i18n"
+        $("[data-translate]").jqTranslate(['header', 'home'], {
+            path: "i18n",
+            onComplete: function () {
+
+                /*
+                     * -----------------------------------------------------------------
+                     *-----------------------------Typed Js-----------------------------
+                     * -----------------------------------------------------------------
+                     */
+
+                if ($(".welcome-area").is(".animated-text") && !typedJsApplied) {
+
+                    var allTextPopped = true;
+
+                    $("#typed-strings h1").each(function (index, h1) {
+                        if ($(h1).text() == "") {
+                            allTextPopped = false;
+                        }
+                    });
+
+                    if (allTextPopped) {
+                        var typed = new Typed("#typed", {
+                            stringsElement: '#typed-strings',
+                            typeSpeed: 60,
+                            backSpeed: 30,
+                            backDelay: 2000,
+                            startDelay: 1000,
+                            loop: true
+                        });
+
+                        typedJsApplied = true;
+                    }
+                }
+
+            }
+        });
+
     });
 
 })(jQuery);

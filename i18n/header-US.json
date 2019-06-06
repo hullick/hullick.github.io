@@ -1,3 +1,15 @@
 {
-  "hello": "Hello!"
+  "home": "Home",
+  "about": "About me",
+  "qualifications": "Qualifications",
+  "portfolio": "Portifolio",
+  "knowledges": "Knowledges",
+  "social-networks": "Social networks",
+  "contacts": "Contacts",
+  "newsletter": "Sign to my newsletter",
+  "newsletter-input": {
+    "placeholder": "jhon.doe@google.com"
+  },
+  "newsletter-subscribe": "Subscribe"
 }
+

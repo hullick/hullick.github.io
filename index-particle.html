@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/jquery.pagepiling.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Martel:200,300,400,600,700,800,900%7CRaleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7CRoboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -44,8 +45,8 @@
     <!--Start Header-->
     <header>
         <div class="logo-area">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="logo">
+            <a href="#" class="logo">
+                <h4>HBG</h4>
             </a>
         </div>
         <div class="header-info-area">
@@ -61,26 +62,27 @@
                 <div class="modal-content">
                     <nav class="menu" id="menu">
                         <ul id="mainMenu">
-                            <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
-                            <li data-menuanchor="about"><a href="#about">About</a></li>
-                            <li data-menuanchor="service"><a href="#service">Services</a></li>
-                            <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
-                            <li data-menuanchor="client-testimonial"><a href="#client-testimonial">Testimonial</a></li>
-                            <li data-menuanchor="blog"><a href="#blog">Blog</a></li>
-                            <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+                            <li data-menuanchor="home" class="active"><a href="#home" data-translate="home"></a></li>
+                            <li data-menuanchor="about"><a href="#about" data-translate="about"></a></li>
+                            <li data-menuanchor="service"><a href="#service" data-translate="knowledges"></a></li>
+                            <li data-menuanchor="portfolio"><a href="#portfolio" data-translate="portfolio"></a></li>
+                            <li data-menuanchor="blog"><a href="#blog" data-translate="social-networks"></a></li>
+                            <li data-menuanchor="client-testimonial"><a href="#client-testimonial"
+                                                                        data-translate="recommendations"></a></li>
+                            <li data-menuanchor="contact"><a href="#contact" data-translate="contacts"></a></li>
                         </ul>
                     </nav>
                     <!--Start Newsletter area-->
                     <div class="newsletter" id="newsletter">
                         <div class="container">
                             <div class="row">
-                                <h5>Get Updates:</h5>
+                                <h5 data-translate="newsletter"></h5>
                                 <div class="newsletter-form">
                                     <form id="mc-form">
                                         <input type="email" id="mc-email" class="newsletter-email"
-                                               placeholder="Type your email here">
-                                        <button type="submit" class="submit-btn">
-                                            <span>Subscribe</span>
+                                               data-translate="newsletter-input">
+                                        <button type="submit" class="submit-btn col-12">
+                                            <span data-translate="newsletter-subscribe"></span>
                                         </button>
                                         <label for="mc-email"></label>
                                     </form>
@@ -102,7 +104,7 @@
             <div id="particles-js"></div>
             <div class="content-container">
                 <div class="overlayImg"></div>
-                <div class="title-small"><p>HOME</p></div>
+                <div class="title-small"><p data-translate="home"></p></div>
                 <div class="display-table">
                     <div class="display-content">
                         <div class="container">
@@ -111,14 +113,15 @@
                                     <div class="welcome-text">
                                         <div class="type-wrap">
                                             <div id="typed-strings">
-                                                <h1>I'm <span>Kevin Watson</span></h1>
-                                                <h1>I'm a <span>Designer</span></h1>
+                                                <h1 data-translate="typed-string1"></h1>
+                                                <h1 data-translate="typed-string2"></h1>
                                             </div>
                                             <span id="typed"></span>
                                         </div>
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut.</p>
+                                            tempor incididunt ut.
+                                        </p>
                                         <div class="social-icons">
                                             <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -136,7 +139,6 @@
         </div>
     </section>
     <!--End Welcome Section-->
-
 
     <!--Start About Section-->
     <section class="about section pp-scrollable" id="about">
