@@ -4,12 +4,11 @@
  *Version:1.1
  *-------------------------------------
  */
-(function($) {
+(function ($) {
 
     "use strict";
 
-    jQuery(document).on("ready", function() {
-
+    jQuery(document).on("ready", function () {
 
 
         /*
@@ -20,7 +19,7 @@
 
         var themeWindow = $(window);
         var pagebody = $('html, body');
-        themeWindow.on("load", function() {
+        themeWindow.on("load", function () {
 
             var preloader = jQuery('.preloader');
             var preloaderArea = jQuery('.preloader-area');
@@ -30,7 +29,7 @@
         });
 
         var anchor = $('a[href="#"]');
-        anchor.on("click", function() {
+        anchor.on("click", function () {
             e.preventDefault();
         });
 
@@ -42,14 +41,14 @@
          */
 
 
-
         // Prevent console.log from generating errors in IE for the purposes of the demo
-        if(!window.console) console = {
-            log: function() {}
+        if (!window.console) console = {
+            log: function () {
+            }
         };
 
         // The actual plugin
-        if($(".welcome-area").is("#welcome-area")) {
+        if ($(".welcome-area").is("#welcome-area")) {
             var singleNav = jQuery('.single-page-nav');
             singleNav.singlePageNav({
                 offset: singleNav.outerHeight(),
@@ -67,7 +66,7 @@
 
             var width1 = $(".prog1").data("progress");
             var progBar1 = $(".prog1");
-            skill.waypoint(function() {
+            skill.waypoint(function () {
                 progBar1.css({
                     "width": width1,
                     "transition": "2s ease-in"
@@ -80,7 +79,7 @@
 
             var width2 = $(".prog2").data("progress");
             var progBar2 = $(".prog2");
-            skill.waypoint(function() {
+            skill.waypoint(function () {
                 progBar2.css({
                     "width": width2,
                     "transition": "2s ease-in"
@@ -93,7 +92,7 @@
 
             var width3 = $(".prog3").data("progress");
             var progBar3 = $(".prog3");
-            skill.waypoint(function() {
+            skill.waypoint(function () {
                 progBar3.css({
                     "width": width3,
                     "transition": "2s ease-in"
@@ -104,7 +103,6 @@
             });
 
 
-
             /*
              * -----------------------------------------------------------------
              *-------------------------------Mixit Up---------------------------
@@ -112,11 +110,9 @@
              */
 
 
-
             var portfolioContent = $('.portfolio-content');
 
             portfolioContent.mixItUp();
-
 
 
             /*
@@ -124,7 +120,6 @@
              *-----------------------------lightbox-----------------------------
              * -----------------------------------------------------------------
              */
-
 
 
             lightbox.option({
@@ -148,8 +143,6 @@
             });
 
 
-
-
             /*
              * -----------------------------------------------------------------
              *----------------------Contact form ajax---------------------------
@@ -157,10 +150,9 @@
              */
 
 
-
             var contactSubmit = $('#contact-submit');
 
-            contactSubmit.on('click', function(e) {
+            contactSubmit.on('click', function (e) {
                 e.preventDefault();
                 var name = $('#form-name').val();
                 var email = $('#form-email').val();
@@ -179,7 +171,7 @@
                         'action': 'contact',
                         'form': form
                     })
-                }).done(function(data) {
+                }).done(function (data) {
 
                     var conResult = $('#contact .result');
                     conResult.html(data);
@@ -195,7 +187,6 @@
              *--------------------Owl Carousel For Testimonial------------------
              * -----------------------------------------------------------------
              */
-
 
 
             var testimonial = $("#client-testimonial #owl-demo-testimonial");
@@ -259,15 +250,13 @@
             });
 
 
-
-
             /*
              * -----------------------------------------------------------------
              *-----------------------------Typed Js-----------------------------
              * -----------------------------------------------------------------
              */
 
-            if($(".welcome-area").is(".animated-text")) {
+            if ($(".welcome-area").is(".animated-text")) {
                 var typed = new Typed("#typed", {
                     stringsElement: '#typed-strings',
                     typeSpeed: 60,
@@ -312,8 +301,10 @@
             animateAnchor: true,
 
             //events
-            afterRender: function() {},
-            afterLoad: function(anchorLink, index) {}
+            afterRender: function () {
+            },
+            afterLoad: function (anchorLink, index) {
+            }
         });
 
         /*
@@ -338,7 +329,6 @@
          */
 
 
-
         var videoPlay = $('.video-play');
         videoPlay.magnificPopup({
             type: 'iframe',
@@ -353,7 +343,7 @@
          * -----------------------------------------------------------------
          */
 
-        if($(".vanta-bg").is(".bird")) {
+        if ($(".vanta-bg").is(".bird")) {
             VANTA.BIRDS({
                 el: "#welcome-vanta-area",
                 backgroundColor: 0xc0baa6,
@@ -368,7 +358,7 @@
             })
 
         }
-        if($(".vanta-bg").is(".fog")) {
+        if ($(".vanta-bg").is(".fog")) {
             VANTA.FOG({
                 el: "#welcome-vanta-area",
                 highlightColor: 0x9ec8e6,
@@ -379,7 +369,7 @@
             })
         }
 
-        if($(".vanta-bg").is(".waves")) {
+        if ($(".vanta-bg").is(".waves")) {
             VANTA.WAVES({
                 el: "#welcome-vanta-area",
                 color: 0x19303e,
@@ -387,7 +377,7 @@
             })
         }
 
-        if($(".vanta-bg").is(".cloud")) {
+        if ($(".vanta-bg").is(".cloud")) {
             VANTA.CLOUDS({
                 el: "#welcome-vanta-area",
                 skyColor: 0x1a1d34,
@@ -396,6 +386,10 @@
             })
         }
 
+    });
+
+    $("[data-translate]").jqTranslate(['header'],{
+        path: "i18n"
     });
 
 })(jQuery);
