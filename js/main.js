@@ -8,9 +8,13 @@
 
     "use strict";
 
+    $.urlParam = function (name) {
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+
+        return results? results[1] : null;
+    };
+    
     jQuery(document).on("ready", function () {
-
-
         /*
          * -----------------------------------------------------------------
          *---------------------------Preloader and Anchor Tag---------------
