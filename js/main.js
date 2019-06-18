@@ -4,12 +4,76 @@
  *Version:1.1
  *-------------------------------------
  */
+
+function format(country) {
+    if (!country.id) {
+        return country.text;
+    }
+
+    return '<img class="flag mr-2" src="images/flags/' + country.id.toLowerCase() + '.png"/>' +
+        "<span>" + country.text + "</span>";
+};
+
+function changeLanguage(newLanguage) {
+    location.assign(location.origin + location.pathname + "?language=" + newLanguage + "&hook=" + location.hash);
+}
+
+function setCurrentLanguage(language = null, redirect = false) {
+    var typedJsApplied = false;
+
+    if (language != null) {
+        language = language.toString().toUpperCase();
+    }
+
+    $("[data-translate]").jqTranslate(['header', 'home'], {
+        path: "i18n",
+        defaultLang: language,
+        forceLang: language,
+        onComplete: function () {
+
+            /*
+                 * -----------------------------------------------------------------
+                 *-----------------------------Typed Js-----------------------------
+                 * -----------------------------------------------------------------
+                 */
+
+            if ($(".welcome-area").is(".animated-text") && !typedJsApplied) {
+
+                var allTextPopped = true;
+
+                $("#typed-strings h1").each(function (index, h1) {
+                    if ($(h1).text() == "") {
+                        allTextPopped = false;
+                    }
+                });
+
+                if (allTextPopped) {
+                    var typed = new Typed("#typed", {
+                        stringsElement: '#typed-strings',
+                        typeSpeed: 60,
+                        backSpeed: 30,
+                        backDelay: 2000,
+                        startDelay: 1000,
+                        loop: true
+                    });
+
+                    typedJsApplied = true;
+                }
+            }
+
+        }
+    });
+}
+
 (function ($) {
 
     "use strict";
 
-    jQuery(document).on("ready", function () {
-
+    jQuery(document).on("ready", function (keyframes, options) {
+        $.urlParam = function (name) {
+            var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+            return results ? results[1] : null;
+        };
 
         /*
          * -----------------------------------------------------------------
@@ -72,7 +136,6 @@
                     "transition": "2s ease-in"
                 });
             }, {
-
                 offset: width1
             });
 
@@ -367,43 +430,22 @@
             })
         }
 
-        var typedJsApplied = false;
+        const select2 = $(".select2");
 
-        $("[data-translate]").jqTranslate(['header', 'home'], {
-            path: "i18n",
-            onComplete: function () {
-
-                /*
-                     * -----------------------------------------------------------------
-                     *-----------------------------Typed Js-----------------------------
-                     * -----------------------------------------------------------------
-                     */
-
-                if ($(".welcome-area").is(".animated-text") && !typedJsApplied) {
-
-                    var allTextPopped = true;
-
-                    $("#typed-strings h1").each(function (index, h1) {
-                        if ($(h1).text() == "") {
-                            allTextPopped = false;
-                        }
-                    });
-
-                    if (allTextPopped) {
-                        var typed = new Typed("#typed", {
-                            stringsElement: '#typed-strings',
-                            typeSpeed: 60,
-                            backSpeed: 30,
-                            backDelay: 2000,
-                            startDelay: 1000,
-                            loop: true
-                        });
-
-                        typedJsApplied = true;
-                    }
-                }
-
+        select2.select2({
+            templateResult: format,
+            placeholder: "Escolha",
+            allowClear: true,
+            escapeMarkup: function (m) {
+                return m;
             }
+        });
+
+        setCurrentLanguage($.urlParam("language"));
+
+        $("#language-choose").on('select2:select', function (e) {
+            e.preventDefault();
+            changeLanguage($(this).val())
         });
 
     });
