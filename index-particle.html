@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Martel:200,300,400,600,700,800,900%7CRaleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7CRoboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -66,12 +67,34 @@
                             <li data-menuanchor="about"><a href="#about" data-translate="about"></a></li>
                             <li data-menuanchor="service"><a href="#service" data-translate="knowledges"></a></li>
                             <li data-menuanchor="portfolio"><a href="#portfolio" data-translate="portfolio"></a></li>
-                            <li data-menuanchor="blog"><a href="#blog" data-translate="social-networks"></a></li>
                             <li data-menuanchor="client-testimonial"><a href="#client-testimonial"
                                                                         data-translate="recommendations"></a></li>
+                            <li data-menuanchor="blog"><a href="#blog" data-translate="social-networks"></a></li>
                             <li data-menuanchor="contact"><a href="#contact" data-translate="contacts"></a></li>
                         </ul>
                     </nav>
+                    <!--Start Change Language area-->
+                    <div class="newsletter" id="language">
+                        <div class="container mb-4">
+                            <div class="row">
+                                <h5 data-translate="change-language"></h5>
+                                <div class="newsletter-form col-12">
+                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 float-left">
+                                        <label for="language-choose" data-translate="select-language"
+                                               class="m-0 float-none"></label>
+                                    </div>
+                                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 float-left">
+                                        <select class="select2" id="language-choose">
+                                            <option></option>
+                                            <option value="br" id="br">PT-BR</option>
+                                            <option value="us" id="un">EN-US</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Newsletter area-->
                     <!--Start Newsletter area-->
                     <div class="newsletter" id="newsletter">
                         <div class="container">
@@ -931,4 +954,7 @@
 <script src="js/app-particle.js"></script>
 <script src="js/jqueryTranslator.min.js"></script>
 <script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.full.js"></script>
+<script src="js/jquery.livequery.min.js"></script>
+
 </body>

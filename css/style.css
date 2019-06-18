@@ -173,7 +173,7 @@ header .modal-content {
   width: 12px;
 }
 
-header #newsletter {
+header #newsletter, header #language {
   border-top: 1px solid #8a8a8a;
 }
 
@@ -206,7 +206,7 @@ header .submit-btn:hover {
   background: #484848;
 }
 
-header #newsletter h5 {
+header #newsletter h5, header #language h5 {
   color: #333;
   font-weight: 700;
   font-size: 16px;
@@ -215,7 +215,7 @@ header #newsletter h5 {
   text-transform: uppercase;
 }
 
-header #newsletter label {
+header #newsletter label, header #language label {
   margin-top: 14px;
   display: block;
   width: 100%;
@@ -1376,4 +1376,16 @@ footer .copyright p {
   text-align: center;
   color: #ddd;
   font-weight: 500;
+}
+
+.select2 {
+  width:100%!important;
+}
+
+.flag{
+  width: 32px;
+}
+
+.select2-results span{
+    color: #0b0b0b;
 }
