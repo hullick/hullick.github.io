@@ -1,0 +1,23 @@
+{
+  "about-me": "Sobre mim",
+  "cv-download": "Baixe o currículo",
+  "address": "Endereço:",
+  "address-street": "Rua",
+  "address-number": "número",
+  "address-country": "Brasil",
+  "nationality-term": "Nacionalidade:",
+  "nationality": "Brasileiro",
+  "telphone": "Telefone:",
+  "birthday-term": "Aniversário:",
+  "age": "Idade:",
+  "years-term": "anos",
+  "education": "Educação",
+  "course-term": "Curso:",
+  "course": "Ciência da Computação",
+  "degree-type-term": "Tipo:",
+  "degree-type": "Bacharel",
+  "university": "Universidade",
+  "finishing-term": "Término:",
+  "finishing": "2º semestre de 2019",
+  "skills": "Habilidades"
+}

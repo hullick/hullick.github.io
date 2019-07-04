@@ -25,7 +25,7 @@ function setCurrentLanguage(language = null, redirect = false) {
         language = language.toString().toUpperCase();
     }
 
-    $("[data-translate]").jqTranslate(['header', 'home'], {
+    $("[data-translate]").jqTranslate(['header', 'home', "about"], {
         path: "i18n",
         defaultLang: language,
         forceLang: language,
@@ -449,6 +449,9 @@ function setCurrentLanguage(language = null, redirect = false) {
             changeLanguage($(this).val())
         });
 
+        var age = Math.floor((new Date() - new Date("1994-01-23")) / (365.25 * 24 * 60 * 60 * 1000));
+
+        $("#age").html(age);
     });
 
 })(jQuery);

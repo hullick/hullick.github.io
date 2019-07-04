@@ -1,0 +1,23 @@
+{
+  "about-me": "About me",
+  "cv-download": "Get my curriculum",
+  "address": "Address:",
+  "address-street": "Street",
+  "address-number": "number",
+  "address-country": "Brazil",
+  "nationality-term": "Nationality:",
+  "nationality": "Brazilian",
+  "telphone": "Telphone:",
+  "birthday-term": "Birthday:",
+  "age": "Age:",
+  "years-term": "years",
+  "education": "Education",
+  "course-term": "Course:",
+  "course": "Computer Science",
+  "degree-type-term": "Degree type:",
+  "degree-type": "Bachelor",
+  "university": "University",
+  "finishing-term": "Finish:",
+  "finishing": "2019's second semester",
+  "skills": "Skills"
+}
