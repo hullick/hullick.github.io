@@ -452,6 +452,25 @@ function setCurrentLanguage(language = null, redirect = false) {
         var age = Math.floor((new Date() - new Date("1994-01-23")) / (365.25 * 24 * 60 * 60 * 1000));
 
         $("#age").html(age);
+
+        $("[data-skill!=''][data-skill]").each(function () {
+            $(this).css("display", "none");
+
+            var skills = $.urlParam("skills");
+
+            var currentDataSkills = $(this).attr("data-skill").split(" ");
+
+            if (skills)
+                if (skills.includes('all')) {
+                    $(this).css("display", "initial")
+                } else {
+                    for (let currentSkill of skills.split(",")) {
+                        if (currentDataSkills.includes(currentSkill)) {
+                            $(this).css("display", "initial")
+                        }
+                    }
+                }
+        });
     });
 
 })(jQuery);
