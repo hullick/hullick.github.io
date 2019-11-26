@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="logo192.png" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Hullick Bartholo Gomes</title>
+    <!--css styles-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="assets/css/jquery.pagepiling.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Martel:200,300,400,600,700,800,900%7CRaleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7CRoboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Respond.js IE8 support media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <meta name="theme-color" content="#000000"/>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />-->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,20 +40,205 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!--    <title>React About</title>-->
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<div id="pagepiling" class="imgBg">
+    <!-- Start Preloader -->
+    <div class="preloader">
+        <div class="preloader-img"></div>
+    </div>
+    <!-- End Preloader -->
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <!--Start Header-->
+    <header>
+        <div class="logo-area">
+            <a href="index.html" class="logo">
+                <img src="/assets/images/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="header-info-area">
+            <a class="info-btn" id="header-info-btn" href="#header-info-bar">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class=bottom></span>
+            </a>
+            <div id="header-info-bar">
+                <div class="close-animatedModal close-header-info-bar">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="modal-content">
+                    <nav class="menu" id="menu">
+                        <ul id="mainMenu">
+                            <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
+                            <li data-menuanchor="about"><a href="#about">About</a></li>
+                            <li data-menuanchor="service"><a href="#service">Services</a></li>
+                            <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
+                            <li data-menuanchor="client-testimonial"><a href="#client-testimonial">Testimonial</a></li>
+                            <li data-menuanchor="blog"><a href="#blog">Blog</a></li>
+                            <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!--Start Newsletter area-->
+                    <div class="newsletter" id="newsletter">
+                        <div class="container">
+                            <div class="row">
+                                <h5>Get Updates:</h5>
+                                <div class="newsletter-form">
+                                    <form id="mc-form">
+                                        <input type="email" id="mc-email" class="newsletter-email"
+                                               placeholder="Type your email here">
+                                        <button type="submit" class="submit-btn">
+                                            <span>Subscribe</span>
+                                        </button>
+                                        <label for="mc-email"></label>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Newsletter area-->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End Header-->
+
+    <!--Start Welcome Section-->
+    <section class="welcome-area home animated-text section pp-scrollable" id="welcome-area">
+        <div class="particle-bg " id="welcome-image-area">
+            <div id="particles-js"></div>
+            <div id="welcome-section"></div>
+        </div>
+    </section>
+    <!--End Welcome Section-->
+
+
+    <!--Start About Section-->
+    <section class="about section pp-scrollable" id="about">
+        <div id="about-section"></div>
+    </section>
+    <!--End About Section-->
+
+
+    <!--Start Services Section-->
+    <section class="service section pp-scrollable" id="service">
+        <div class="content-container">
+            <div class="display-content">
+                <div class="service-header">
+                    <div id="service-section"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Services Section-->
+
+    <!--Start Resume Section-->
+    <section class="resume section pp-scrollable" id="resume">
+        <div class="content-container">
+            <div class="display-table">
+                <div class="display-content">
+                    <div id="resume-section"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Resume Section-->
+
+
+    <!--Start Portfolio Section-->
+    <section class="portfolio section pp-scrollable" id="portfolio">
+        <div class="content-container">
+            <div class="display-table">
+                <div class="display-content">
+                    <div id="portfolio-section"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Portfolio Section-->
+
+    <!--Start work Section-->
+    <section class="work section pp-scrollable" id="work">
+        <div class="content-container">
+            <div class="display-table">
+                <div class="display-content">
+                    <div id="work-section"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End work Section-->
+
+    <!--Start Client Testimonial Section Area-->
+    <section class="client-testimonial pp-scrollable section" id="client-testimonial">
+        <div class="content-container">
+            <div class="display-table">
+                <div class="display-content">
+                    <div id="client-testimonial-section"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Client Testimonial Section Area-->
+
+
+    <!--Start Blog Section Area-->
+    <section class="blog pp-scrollable section" id="blog">
+        <div class="content-container">
+            <div class="display-table">
+                <div class="display-content">
+                    <div id="blog-section"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Blog Section Area-->
+
+
+    <!--Start Contact Section-->
+    <section class="contact footer pp-scrollable section" id="contact">
+        <div class="content-container">
+            <div class="display-table">
+                <div class="display-content">
+                    <div id="contact-section"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Contact Section-->
+</div>
+
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
+
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+
+<!--javascript-->
+<script src="assets/js/jquery.min.js "></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js "></script>
+<script src="assets/js/jquery.waypoints.min.js "></script>
+<script src="assets/js/jquery.ajaxchimp.min.js "></script>
+<script src="assets/js/lightbox.js "></script>
+<script src="assets/js/typed.min.js "></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/mixitup.min.js "></script>
+<script src="assets/js/animatedModal.min.js"></script>
+<script src="assets/js/jquery.pagepiling.min.js"></script>
+<script src="assets/js/jquery.singlePageNav.min.js "></script>
+<script src="assets/js/particles.min.js"></script>
+<script src="assets/js/app-particle.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
 </html>
